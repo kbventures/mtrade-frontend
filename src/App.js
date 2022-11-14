@@ -1,23 +1,19 @@
-import { Container, Col, Row } from "react-bootstrap";
-import "./App.css";
-import Register from "./Register";
-import Login from "./Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <Container>
-      <Container>
-        <Row>
-          <Col xs={12} sm={12} md={6} lg={6}>
-            <Register />
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={6}>
-            <Login />
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={6}></Col>
-        </Row>
-      </Container>
-    </Container>
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
