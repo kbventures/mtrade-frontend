@@ -1,21 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useTradesContext } from "../hooks/useTradesContext";
+
+// components
 import TradeDetails from "../components/TradeDetails";
 import TradeForm from "../components/TradeForm";
 
 const Home = () => {
-  const [trades, setTrades] = useState(null);
+  const { trades, dispatch } = useTradesContext();
+  // const [trades, setTrades] = useState(null);
   useEffect(() => {
     const fetchTrades = async () => {
       const response = await fetch("/api/trades");
       const json = await response.json();
 
       if (response.ok) {
-        setTrades(json);
+        // setTrades(json);
+        dispatch({ type: "SET_TRADES", payload: json });
       }
     };
 
     fetchTrades();
-  }, []);
+  }, [dispatch]);
   return (
     <div className="home">
       <div className="trades">

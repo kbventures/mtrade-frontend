@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useTradesContext } from "../hooks/useTradesContext";
 
 const TradeForm = () => {
+  const { dispatch } = useTradesContext();
+
   const [pair, setPair] = useState("");
   const [price, setPrice] = useState("");
   const [amount, setAmount] = useState("");
@@ -37,6 +40,7 @@ const TradeForm = () => {
       setClosedDate("");
       setError(null);
       console.log("New trade added", json);
+      dispatch({ type: "CREATE_TRADE", payload: json });
     }
   };
 
