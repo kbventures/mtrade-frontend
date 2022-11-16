@@ -12,6 +12,10 @@ export const tradesReducer = (state, action) => {
       return {
         trades: [action.payload, ...state.trades],
       };
+    case "DELETE_TRADE":
+      return {
+        trades: state.trades.filter((t) => t._id !== action.payload._id),
+      };
     default:
       return state;
   }

@@ -1,4 +1,19 @@
+import { useTradesContext } from "../hooks/useTradesContext";
+
 const TradeDetails = ({ trade }) => {
+  const { dispatch } = useTradesContext();
+
+  const handleClick = async () => {
+    const response = await fetch("/api/trades/" + trade._id, {
+      method: "DELETE",
+    });
+    const json = await response.json();
+
+    if (response.ok) {
+      dispatch({ type: "DELETE_TRADE", payload: json });
+    }
+  };
+
   return (
     <div className="trade-details">
       <h4>
@@ -19,6 +34,7 @@ const TradeDetails = ({ trade }) => {
       <p>
         <strong>Closed Date</strong>:{trade.closedDate}
       </p>
+      <span onClick={handleClick}>Delete</span>
     </div>
   );
 };
