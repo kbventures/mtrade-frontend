@@ -4,9 +4,12 @@ const TradeDetails = ({ trade }) => {
   const { dispatch } = useTradesContext();
 
   const handleClick = async () => {
-    const response = await fetch("/api/trades/" + trade._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      "https://real-cyan-mackerel-robe.cyclic.app/api/trades/" + trade._id,
+      {
+        method: "DELETE",
+      }
+    );
     const json = await response.json();
 
     if (response.ok) {

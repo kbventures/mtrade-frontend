@@ -10,7 +10,9 @@ const Home = () => {
   // const [trades, setTrades] = useState(null);
   useEffect(() => {
     const fetchTrades = async () => {
-      const response = await fetch("/api/trades");
+      const response = await fetch(
+        "https://real-cyan-mackerel-robe.cyclic.app/api/trades"
+      );
       const json = await response.json();
 
       if (response.ok) {
