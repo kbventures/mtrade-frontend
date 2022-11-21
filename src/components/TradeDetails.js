@@ -1,5 +1,8 @@
 import { useTradesContext } from "../hooks/useTradesContext";
 
+// date fns
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
+
 const TradeDetails = ({ trade }) => {
   const { dispatch } = useTradesContext();
 
@@ -32,12 +35,16 @@ const TradeDetails = ({ trade }) => {
         <strong>Closed Price</strong>:{trade.closedPrice}
       </p>
       <p>
-        <strong>Open Date</strong>:{trade.openedDate}
+        <strong>Open Date</strong>:
+        {formatDistanceToNow(new Date(trade.openedDate), { addSuffix: true })}
       </p>
       <p>
-        <strong>Closed Date</strong>:{trade.closedDate}
+        <strong>Closed Date</strong>:
+        {formatDistanceToNow(new Date(trade.closedDate), { addSuffix: true })}
       </p>
-      <span onClick={handleClick}>Delete</span>
+      <span className="material-symbols-outlined" onClick={handleClick}>
+        Delete
+      </span>
     </div>
   );
 };
