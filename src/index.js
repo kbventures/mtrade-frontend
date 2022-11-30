@@ -4,13 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { TradesContextProvider } from "./context/TradeContext";
-
+import { AuthContextProvider } from "./context/AuthContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TradesContextProvider>
-      <App />
-    </TradesContextProvider>
+    <AuthContextProvider>
+      <TradesContextProvider>
+        <App />
+      </TradesContextProvider>
+    </AuthContextProvider>
   </React.StrictMode>
 );
 
