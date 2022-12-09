@@ -1,16 +1,25 @@
 import { useTradesContext } from "../hooks/useTradesContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 // date fns
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const TradeDetails = ({ trade }) => {
   const { dispatch } = useTradesContext();
+  const { user } = useAuthContext();
 
   const handleClick = async () => {
+    if (!user) {
+      return;
+    }
+
     const response = await fetch(
       "https://real-cyan-mackerel-robe.cyclic.app/api/trades/" + trade._id,
       {
         method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
       }
     );
     const json = await response.json();
