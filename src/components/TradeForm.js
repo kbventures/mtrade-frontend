@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useTradesContext } from "../hooks/useTradesContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 const TradeForm = () => {
   const { dispatch } = useTradesContext();
+  const { user } = useAuthContext();
 
   const [pair, setPair] = useState("");
   const [price, setPrice] = useState("");
@@ -16,6 +18,11 @@ const TradeForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!user) {
+      setError("You must be logged in");
+      return;
+    }
+
     const trade = { pair, price, amount, closedPrice, openedDate, closedDate };
 
     const response = await fetch(
@@ -25,6 +32,7 @@ const TradeForm = () => {
         body: JSON.stringify(trade),
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
         },
       }
     );
