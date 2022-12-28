@@ -1,8 +1,10 @@
-import { useTradesContext } from "../hooks/useTradesContext";
-import { useAuthContext } from "../hooks/useAuthContext";
+import { useTradesContext } from "../../hooks/useTradesContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 // date fns
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
+
+import styles from "../TradeDetails/tradeDetails.module.scss";
 
 const TradeDetails = ({ trade }) => {
   const { dispatch } = useTradesContext();
@@ -30,7 +32,7 @@ const TradeDetails = ({ trade }) => {
   };
 
   return (
-    <div className="trade-details">
+    <div className={styles.tradeDetails}>
       <h4>
         <strong>{trade.pair}</strong>
       </h4>

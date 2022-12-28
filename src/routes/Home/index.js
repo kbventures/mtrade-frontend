@@ -1,10 +1,13 @@
 import { useEffect } from "react";
-import { useTradesContext } from "../hooks/useTradesContext";
-import { useAuthContext } from "../hooks/useAuthContext";
+import { useTradesContext } from "../../hooks/useTradesContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
+
+// scss
+import styles from "./home.module.scss";
 
 // components
-import TradeDetails from "../components/TradeDetails";
-import TradeForm from "../components/TradeForm";
+import TradeDetails from "../../components/TradeDetails";
+import TradeForm from "../../components/TradeForm";
 
 const Home = () => {
   const { trades, dispatch } = useTradesContext();
@@ -33,8 +36,8 @@ const Home = () => {
   }, [dispatch, user]);
 
   return (
-    <div className="home">
-      <div className="trades">
+    <div className={styles.home}>
+      <div>
         {trades &&
           trades.map((trade) => <TradeDetails key={trade._id} trade={trade} />)}
       </div>

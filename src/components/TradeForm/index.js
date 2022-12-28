@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { useTradesContext } from "../hooks/useTradesContext";
-import { useAuthContext } from "../hooks/useAuthContext";
+import { useTradesContext } from "../../hooks/useTradesContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
+
+import "./tradeForm.module.scss";
 
 const TradeForm = () => {
   const { dispatch } = useTradesContext();
@@ -70,7 +72,7 @@ const TradeForm = () => {
       />
       <label>Price:</label>
       <input
-        type="nufmber"
+        type="number"
         onChange={(e) => setPrice(e.target.value)}
         value={price}
         className={emptyFields.includes("price") ? "error" : ""}
