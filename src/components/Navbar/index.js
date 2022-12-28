@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import { useLogout } from "../hooks/useLogout";
-import { useAuthContext } from "../hooks/useAuthContext";
+import { useLogout } from "../../hooks/useLogout";
+import { useAuthContext } from "../../hooks/useAuthContext";
+
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const { logout } = useLogout();
@@ -11,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <header>
-      <div className="container">
+      <div className={styles.container}>
         <Link to="/">
           <h1>Sun Tzu Trade</h1>
         </Link>
