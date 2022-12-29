@@ -1,19 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.scss";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { TradesContextProvider } from "./context/TradeContext";
-import { AuthContextProvider } from "./context/AuthContext";
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.scss';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { TradesContextProvider } from './context/TradeContext';
+import { AuthContextProvider } from './context/AuthContext';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <AuthContextProvider>
-      <TradesContextProvider>
-        <App />
-      </TradesContextProvider>
-    </AuthContextProvider>
-  </React.StrictMode>
+        <React.StrictMode>
+                <AuthContextProvider>
+                        <TradesContextProvider>
+                                <App />
+                        </TradesContextProvider>
+                </AuthContextProvider>
+        </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
