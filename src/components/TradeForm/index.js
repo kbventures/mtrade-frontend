@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTradesContext } from '../../hooks/useTradesContext';
 import { useAuthContext } from '../../hooks/useAuthContext';
 
-import './tradeForm.module.scss';
+import styles from './tradeForm.module.scss';
 
 const TradeForm = () => {
         const { dispatch } = useTradesContext();
@@ -57,7 +57,7 @@ const TradeForm = () => {
         };
 
         return (
-                <form className="create" onSubmit={handleSubmit}>
+                <form className={styles.create} onSubmit={handleSubmit}>
                         <h3>Add a new Trade</h3>
 
                         <label>
@@ -115,7 +115,7 @@ const TradeForm = () => {
                                 />
                         </label>
                         <button type="submit">Add Trade</button>
-                        {error && <div className="error">{error}</div>}
+                        {error && <div className={styles.error}>{error}</div>}
                 </form>
         );
 };

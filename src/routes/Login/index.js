@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLogin } from '../../hooks/useLogin';
+import styles from './login.module.scss';
 
 const Login = () => {
         const [email, setEmail] = useState('');
@@ -13,7 +14,7 @@ const Login = () => {
         };
 
         return (
-                <form className="login" onSubmit={handleSubmit}>
+                <form className={styles.login} onSubmit={handleSubmit}>
                         <h3>Login</h3>
 
                         <label>
@@ -27,7 +28,7 @@ const Login = () => {
                         <button type="submit" disabled={isLoading}>
                                 Log in
                         </button>
-                        {error && <div className="error">{error}</div>}
+                        {error && <div className={styles.error}>{error}</div>}
                 </form>
         );
 };

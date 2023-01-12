@@ -5,6 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TradesContextProvider } from './context/TradeContext';
 import { AuthContextProvider } from './context/AuthContext';
+import './fonts/roboto-v30-latin-300.woff';
+import './fonts/roboto-v30-latin-300.woff2';
+import './fonts/roboto-v30-latin-regular.woff';
+import './fonts/roboto-v30-latin-regular.woff2';
+import './fonts/roboto-v30-latin-500.woff2';
+import './fonts/roboto-v30-latin-500.woff';
+import './fonts/roboto-v30-latin-700.woff2';
+import './fonts/roboto-v30-latin-700.woff';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
