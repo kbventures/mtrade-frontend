@@ -4,8 +4,6 @@ $background: #fff;
 $primary: #1aac83;
 $error: #e7195a;
 
-
-
 // PX
 $spacer-1: 4px;
 $spacer-2: 8px;
@@ -19,3 +17,49 @@ $spacer-9: 80px;
 $spacer-10: 96px;
 $spacer-11: 112px;
 $spacer-12: 128px;
+
+
+/* Spacing scale, margin & padding */
+$spacer-1: 4px;
+$spacer-2: 8px;
+$spacer-3: 16px;
+$spacer-4: 24px;
+$spacer-5: 32px;
+$spacer-6: 40px;
+
+/*Extended spacing, margin & paddding sale*/
+$spacer-7: 48px;
+$spacer-8: 64px;
+$spacer-9: 80px;
+$spacer-10: 96px;
+$spacer-11: 112px;
+$spacer-12: 128px;
+
+/* Vertical margin scale for text only */
+$vspacer-1: 0.25rem;
+$vspacer-2: 0.5rem;
+$vspacer-3: 1rem;
+$vspacer-4: 1.5rem;
+$vspacer-5: 2rem;
+$vspacer-6: 2.5rem;
+$spacer-7: 3rem;
+$spacer-8: 4rem;
+$spacer-9: 5rem;
+$spacer-10: 6rem;
+$spacer-11: 7rem;
+$spacer-12: 8rem;
+
+
+/* Rounded corners(Border Radius) */
+$rounded-0: none;
+$rounded-1: 4px;
+$rounded-2: 6px;
+$rounded-3: 8px;
+// Perfect circle
+$circle: 50%;
+
+// Box Shadow
+$color-shadow-small: 0 1px 0 rgba(27, 31, 36, 0.04);
+$color-shadow-medium: 0 3px 6px rgba(140, 149, 159, 0.15);
+$color-shadow-large: 0 8px 24px rgba(140, 149, 159, 0.2);
+$color-shadow-extra-large: 0 12px 28px rgba(140, 149, 159, 0.3);
