@@ -15,7 +15,7 @@ const Home = () => {
 
         useEffect(() => {
                 const fetchTrades = async () => {
-                        const response = await fetch('https://real-cyan-mackerel-robe.cyclic.app/api/trades', {
+                        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/trades`, {
                                 headers: {
                                         Authorization: `Bearer ${user.token}`,
                                 },

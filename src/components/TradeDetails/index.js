@@ -4,7 +4,6 @@ import { useTradesContext } from '../../hooks/useTradesContext';
 import { useAuthContext } from '../../hooks/useAuthContext';
 
 // date fns
-
 import styles from './tradeDetails.module.scss';
 
 const TradeDetails = ({ trade }) => {
@@ -16,7 +15,7 @@ const TradeDetails = ({ trade }) => {
                         return;
                 }
 
-                const response = await fetch(`https://real-cyan-mackerel-robe.cyclic.app/api/trades/${trade._id}`, {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/trades/${trade._id}`, {
                         method: 'DELETE',
                         headers: {
                                 Authorization: `Bearer ${user.token}`,
@@ -65,8 +64,8 @@ TradeDetails.propTypes = {
                 price: PropTypes.number,
                 amount: PropTypes.number.isRequired,
                 closedPrice: PropTypes.number.isRequired,
-                openedDate: PropTypes.instanceOf(Date),
-                closedDate: PropTypes.instanceOf(Date),
+                openedDate: PropTypes.string.isRequired,
+                closedDate: PropTypes.string.isRequired,
                 _id: PropTypes.string.isRequired,
         }),
 };
