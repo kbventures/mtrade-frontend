@@ -24,10 +24,10 @@ const TradeForm = () => {
                         setError('You must be logged in');
                         return;
                 }
-
+                // eslint-disable-next-line no-console
+                console.log(user.token);
                 const trade = { pair, price, amount, closedPrice, openedDate, closedDate };
-
-                const response = await fetch('https://real-cyan-mackerel-robe.cyclic.app/api/trades', {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/trades`, {
                         method: 'POST',
                         body: JSON.stringify(trade),
                         headers: {
