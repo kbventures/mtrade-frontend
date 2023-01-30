@@ -1,13 +1,14 @@
-# .github/workflows/netlify.yml
-name: "Build pipeline for web release"
-on:
+name: "ci-cd pipeline"
+
+on: 
   push:
     branches:
     - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
-steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 16.x
       uses: actions/setup-node@v2
@@ -17,10 +18,13 @@ steps:
         cache-dependency-path: package-lock.json
     - name: Install dependencies
       run: npm install 
+    // - name: Run tests
+    // - run: npm test
     - name: Build file
       run: npm run build
-    - name: Copy build settings to build folder
-      run: cp netlify.toml build/
+      
+
+    // deploy the application to netlify
     - name: Deploy production to Netlify
       uses: South-Paw/action-netlify-deploy@v1.2.0
       with:
