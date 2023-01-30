@@ -1,35 +1,27 @@
-name: "ci-cd pipeline"
-
-on: 
+# .github/workflows/netlify.yml
+name: Build and Deploy to Netlify
+on:
   push:
-    branches:
-    - main
-
+  pull_request:
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16.x
-        cache: 'npm'
-        cache-dependency-path: package-lock.json
-    - name: Install dependencies
-      run: npm install 
-    // - name: Run tests
-    // - run: npm test
-    - name: Build file
-      run: npm run build
-      
+      - uses: actions/checkout@v2
 
-    // deploy the application to netlify
-    - name: Deploy production to Netlify
-      uses: South-Paw/action-netlify-deploy@v1.2.0
-      with:
-        github-token: ${{ secrets.GITH_TOKEN }}
-        netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-        build-dir: './build'
-        comment-on-commit: true
+      # ( Build to ./dist or other directory... )
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './build'
+          production-branch: main
+          github-token: ${{ secrets.GITH_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
