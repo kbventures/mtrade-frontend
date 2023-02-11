@@ -9,6 +9,9 @@ export const useSignup = () => {
         const signup = async (email, password) => {
                 setIsLoading(true);
                 setError(null);
+                const temp = process.env.REACT_APP_BACKEND_URL;
+                // eslint-disable-next-line no-console
+                console.log(temp);
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/user/signup`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
