@@ -99,8 +99,6 @@ We are a leading online electronics store that is committed to providing the bes
 
 ## Design
 
-The MVP was heavily inspired by this [Figma](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design.  Our [MMP](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design is inpsired by Amazon/BestBuy single page design. 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -114,8 +112,6 @@ To get a local copy up and run follow these simple example steps.
 
 - Node.js: [Download](https://nodejs.org/en/)
 - Git: [Download](https://git-scm.com/)
-- [Stripe](https://www.stripe.com): Account, Secret & Publishable key
-- [Cloudinary](https://www.cloudinary.com): Account Secret Key & Product Images
 - [MongoDB Atlas](https://www.mongodb.com/atlas/database): MongoDB Account & Secret Key
 
 ### Installation
