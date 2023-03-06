@@ -1,0 +1,5 @@
+i18n.js
+*.test.js
+build/*
+node_modules/*
+.github/*
