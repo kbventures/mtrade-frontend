@@ -1,41 +1,41 @@
 <a name="readme-top"></a>
 
 <a href="">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=erenaissance-frontend" />
+  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=mtrade-frontend" />
 </a>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/e-renaissance-logo.png" alt="Logo">
+    <img src="" alt="Logo">
   </a>
   
   <div align="center">
-<a href="https://github.com/kbventures/ecommerce/network/members">
-  <img height="28px" src="https://img.shields.io/github/forks/kbventures/ecommerce?color=6ca4cc" alt="Forks"/>
+<a href="https://github.com/kbventures/mtrade-frontend/network/members">
+  <img height="28px" src="https://img.shields.io/github/forks/kbventures/mtrade-frontend?color=6ca4cc" alt="Forks"/>
 </a>
-<a href="https://github.com/kbventures/ecommerce/contributors">
-  <img height="28px" src="https://img.shields.io/github/contributors/kbventures/ecommerce?color=88bc10&logo=github&logoColor=white" alt="Contributors"/>
+<a href="https://github.com/kbventures/mtrade-frontend/contributors">
+  <img height="28px" src="https://img.shields.io/github/contributors/kbventures/mtrade-frontend?color=88bc10&logo=github&logoColor=white" alt="Contributors"/>
 </a>
-<a href="https://github.com/kbventures/ecommerce/issues">
-  <img height="28px" src="https://img.shields.io/github/issues/kbventures/ecommerce" alt="Issues"/>
+<a href="https://github.com/kbventures/mtrade-frontend/issues">
+  <img height="28px" src="https://img.shields.io/github/issues/kbventures/mtrade-frontend" alt="Issues"/>
 </a>
 </div>
 
-  <h3 align="center">e-Renaissance</h3>
+  <h3 align="center">mTrade Front End</h3>
 
   <p align="center">
     The only one electronic store that you need!
     <br />
-    <a href="https://github.com/kbventures/ecommerce/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kbventures/matrade-frontend/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://erenaissance-frontend.vercel.app/" target="_blank">View Demo</a>
+    <a href="https://mtrade-frontend.vercel.app/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/kbventures/ecommerce/issues">Report Bug</a>
+    <a href="https://github.com/kbventures/mtrade-frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/kbventures/ecommerce/issues/new">Request Feature</a>
+    <a href="https://github.com/kbventures/mtrade-frontend/issues/new">Request Feature</a>
   </p>
 </div>
 
@@ -70,9 +70,6 @@
 
 ## About The Project
 
-You're looking for electronics? We have a wide variety of electronics for all your needs. From computers, to cameras, to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
-
-We are a leading online electronics store that is committed to providing the best customer service. We offer a wide range of products including mobile phones, laptops, televisions and much more. We have a team of experts who will guide you through the process of making your purchase and offer you advice on how to take care of your new device.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +77,6 @@ We are a leading online electronics store that is committed to providing the bes
 
 - ![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 - ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-- ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 - ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
@@ -253,16 +249,9 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 
 ## Roadmap
 
-- [x] MVP
-- [] MMP
-  - [ ] Implement new Figma design
-  - [ ] Improve accesibility, performance & SEO metrics
-  - [ ] Automated testing
-  - [ ] Move front end to typescript
-  - [ ] Client sign up
-  - [ ] Client Login & Logout(Authentication)
-  - [ ] Client dashboard features
-  - [ ] Back services to support authentication and client routes
+- [] MVP
+  - [ ] 
+  - [ ] 
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -405,7 +394,7 @@ We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/kbventures/ecommerce/blob/main/LICENSE.txt) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/kbventures/mtrade-frontend/blob/main/LICENSE.txt) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -413,13 +402,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/kbventures/e
 
 ## Contact
 
-Dmitry Kulakov - [@atomeistee](https://twitter.com/atomeistee) - atomeistee@gmail.com
-
-Enrick Andersen Ong - [@rickansen](https://twitter.com/rickansen)
-
 Ken Beaudin - [@kb9700](https://twitter.com/kb9700)
-
-Abdhul Shabbir - [@abdulshabbirdev](https://twitter.com/abdulshabbirdev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
