@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="">
     <img src="" alt="Logo">
   </a>
   
@@ -26,9 +26,9 @@
   <h3 align="center">mTrade Front End</h3>
 
   <p align="center">
-    The only one electronic store that you need!
+    Mindful Analysis Of Your Trades!
     <br />
-    <a href="https://github.com/kbventures/matrade-frontend/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kbventures/mtrade-frontend/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://mtrade-frontend.vercel.app/" target="_blank">View Demo</a>
