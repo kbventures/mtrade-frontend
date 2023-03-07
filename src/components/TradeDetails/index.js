@@ -1,5 +1,6 @@
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { useTradesContext } from '../../hooks/useTradesContext';
 import { useAuthContext } from '../../hooks/useAuthContext';
 
@@ -7,6 +8,7 @@ import { useAuthContext } from '../../hooks/useAuthContext';
 import styles from './tradeDetails.module.scss';
 
 const TradeDetails = ({ trade }) => {
+        const { t } = useTranslation();
         const { dispatch } = useTradesContext();
         const { user } = useAuthContext();
 
@@ -34,25 +36,25 @@ const TradeDetails = ({ trade }) => {
                                 <strong>{trade.pair}</strong>
                         </h4>
                         <p>
-                                <strong>Price</strong>:{trade.price}
+                                <strong>{t('price')}</strong>:{trade.price}
                         </p>
                         <p>
-                                <strong>Amount</strong>:{trade.amount}
+                                <strong>{t('amount')}</strong>:{trade.amount}
                         </p>
                         <p>
-                                <strong>Closed Price</strong>:{trade.closedPrice}
+                                <strong>{t('closed-price')}</strong>:{trade.closedPrice}
                         </p>
                         <p>
-                                <strong>Open Date</strong>:
+                                <strong>{t('open-date')}</strong>:
                                 {formatDistanceToNow(new Date(trade.openedDate), { addSuffix: true })}
                         </p>
                         <p>
-                                <strong>Closed Date</strong>:
+                                <strong>{t('closed-date')}</strong>:
                                 {formatDistanceToNow(new Date(trade.closedDate), { addSuffix: true })}
                         </p>
                         {/* Force to change span to on button due to linting.. check later */}
                         <button type="button" className="material-symbols-outlined" onClick={handleClick}>
-                                Delete
+                                {t('delete')}
                         </button>
                 </div>
         );

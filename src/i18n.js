@@ -10,7 +10,17 @@ const resources = {
                         'logout': 'Logout',
                         'login': 'Login',
                         'signup': 'Signup',
-                        'language': 'Language'
+                        'language': 'Language',
+                        'price':'Price',
+                        'amount':'Amount',
+                        'closed-price':'Closed price',
+                        'open-date':'Open date',
+                        'closed-date':'Closed date',
+                        'add-new-trade':'Add new trade',
+                        'add-trade':'Add trade',
+                        'pair-name':'Pair name',
+                        'must-be-logged-in':'You must be logged in!',
+                        'error':'error'
                 },
         },
         fr: {
@@ -18,7 +28,17 @@ const resources = {
                         'logout': 'Se déconnecter',
                         'login': 'Connexion',
                         'signup': 'S\'inscrire',
-                        'language':'Langue'
+                        'language':'Langue',
+                        'price':'Prix',
+                        'amount':'Montant',
+                        'closed-price':'Prix fermé',
+                        'open-date':'Date d\'ouverture',
+                        'closed-date':'Date fermé',
+                        'add-new-trade':'Ajouter un nouveau titre',
+                        'add-trade':'Ajouter titre',
+                        'pair-name':"Nom de la paire",
+                        'must-be-logged-in':'Vous devez être identifié!',
+                        'error':'erreur'
                 },
         },
 };

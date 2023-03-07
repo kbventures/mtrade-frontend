@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useTradesContext } from '../../hooks/useTradesContext';
 import { useAuthContext } from '../../hooks/useAuthContext';
 
 import styles from './tradeForm.module.scss';
 
 const TradeForm = () => {
+        const { t } = useTranslation();
         const { dispatch } = useTradesContext();
         const { user } = useAuthContext();
 
@@ -21,7 +23,7 @@ const TradeForm = () => {
                 e.preventDefault();
 
                 if (!user) {
-                        setError('You must be logged in');
+                        setError(t('must-be-logged-in'));
                         return;
                 }
                 // eslint-disable-next-line no-console
@@ -58,63 +60,63 @@ const TradeForm = () => {
 
         return (
                 <form className={styles.create} onSubmit={handleSubmit}>
-                        <h3>Add a new Trade</h3>
+                        <h3>{t('add-new-trade')}</h3>
 
                         <label>
-                                Pair Name:
+                                {t('pair-name')}:
                                 <input
                                         type="text"
                                         onChange={(e) => setPair(e.target.value)}
                                         value={pair}
-                                        className={emptyFields.includes('pair') ? 'error' : ''}
+                                        className={emptyFields.includes('pair') ? t('error') : ''}
                                 />
                         </label>
                         <label>
-                                Price:
+                                {t('price')}:
                                 <input
                                         type="number"
                                         onChange={(e) => setPrice(e.target.value)}
                                         value={price}
-                                        className={emptyFields.includes('price') ? 'error' : ''}
+                                        className={emptyFields.includes('price') ? t('error') : ''}
                                 />
                         </label>
                         <label>
-                                Amount:
+                                {t('amount')}:
                                 <input
                                         type="number"
                                         onChange={(e) => setAmount(e.target.value)}
                                         value={amount}
-                                        className={emptyFields.includes('amount') ? 'error' : ''}
+                                        className={emptyFields.includes('amount') ? t('error') : ''}
                                 />
                         </label>
                         <label>
-                                Closed Price:
+                                {t('closed-price')}:
                                 <input
                                         type="number"
                                         onChange={(e) => setClosedPrice(e.target.value)}
                                         value={closedPrice}
-                                        className={emptyFields.includes('closedPrice') ? 'error' : ''}
+                                        className={emptyFields.includes('closedPrice') ? t('error') : ''}
                                 />
                         </label>
                         <label>
-                                Open Date:
+                                {t('open-date')}:
                                 <input
                                         type="date"
                                         onChange={(e) => setOpenDate(e.target.value)}
                                         value={openedDate}
-                                        className={emptyFields.includes('openDate') ? 'error' : ''}
+                                        className={emptyFields.includes('openDate') ? t('error') : ''}
                                 />
                         </label>
                         <label>
-                                Closed Date:
+                                {t('closed-date')}:
                                 <input
                                         type="date"
                                         onChange={(e) => setClosedDate(e.target.value)}
                                         value={closedDate}
-                                        className={emptyFields.includes('closedDate') ? 'error' : ''}
+                                        className={emptyFields.includes('closedDate') ? t('error') : ''}
                                 />
                         </label>
-                        <button type="submit">Add Trade</button>
+                        <button type="submit">{t('add-trade')}</button>
                         {error && <div className={styles.error}>{error}</div>}
                 </form>
         );
