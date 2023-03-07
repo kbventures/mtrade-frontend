@@ -14,6 +14,9 @@ import './fonts/roboto-v30-latin-500.woff';
 import './fonts/roboto-v30-latin-700.woff2';
 import './fonts/roboto-v30-latin-700.woff';
 
+// import i18n (needs to be bundled ;))
+import './i18n';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
         <React.StrictMode>

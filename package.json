@@ -6,9 +6,12 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "date-fns": "^2.29.3",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-router-dom": "^6.4.3",
     "web-vitals": "^2.1.4"
   },
