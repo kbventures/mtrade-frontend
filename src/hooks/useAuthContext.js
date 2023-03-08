@@ -5,7 +5,7 @@ export const useAuthContext = () => {
         const context = useContext(AuthContext);
 
         if (!context) {
-                throw Error('useTradescotext must be used inside an TradesContextProvider');
+                throw Error('useTradesContext must be used inside an TradesContextProvider');
         }
 
         return context;
