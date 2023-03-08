@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
+import { I18nextProvider } from 'react-i18next';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TradesContextProvider } from './context/TradeContext';
 import { AuthContextProvider } from './context/AuthContext';
+
 import './fonts/roboto-v30-latin-300.woff';
 import './fonts/roboto-v30-latin-300.woff2';
 import './fonts/roboto-v30-latin-regular.woff';
@@ -15,16 +17,18 @@ import './fonts/roboto-v30-latin-700.woff2';
 import './fonts/roboto-v30-latin-700.woff';
 
 // import i18n (needs to be bundled ;))
-import './i18n';
+import instance1 from './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
         <React.StrictMode>
-                <AuthContextProvider>
-                        <TradesContextProvider>
-                                <App />
-                        </TradesContextProvider>
-                </AuthContextProvider>
+                <I18nextProvider i18n={instance1}>
+                        <AuthContextProvider>
+                                <TradesContextProvider>
+                                        <App />
+                                </TradesContextProvider>
+                        </AuthContextProvider>
+                </I18nextProvider>
         </React.StrictMode>
 );
 

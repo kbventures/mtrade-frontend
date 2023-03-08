@@ -1,7 +1,5 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
 
 // Needs to be moved to independant JSON file
 const resources = {
@@ -43,19 +41,21 @@ const resources = {
         },
 };
 
+const instance1 = i18n.createInstance()
+
   const DETECTION_OPTIONS = {
     order: [ 'localStorage','navigator'],
   };
   
-  i18n
+  instance1
     .use(LanguageDetector)
-    .use(initReactI18next)
     .init({
       detection: DETECTION_OPTIONS,
       resources,
-      fallbackLng: 'en'
+      fallbackLng: 'en',
+      debug:false
     });
 
 
-    export default i18n;
+    export default instance1;
 
