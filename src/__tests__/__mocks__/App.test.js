@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { render } from '@testing-library/react';
-import App from '../App';
-import { AuthContextProvider } from '../context/AuthContext';
-import { TradesContextProvider } from '../context/TradeContext';
-import { I18nextProvider } from 'react-i18next'
-import i18n from '../i18n';
+import App from '../../App';
+import {AuthContextProvider}  from '../../context/AuthContext';
+import {TradesContextProvider} from '../../context/TradeContext';
+import {I18nextProvider} from 'react-i18next'
+// import i18n from '../../i18nForTests';
+import i18n from '../../react-i18next';
 
 
 
@@ -18,20 +19,10 @@ jest.mock('react-i18next', () => ({
         },
       };
     },
-    initReactI18next: {
-      type: '3rdParty',
-      init: () => {},
-    }
   }));
-
   
 
-describe('App', () => {
-    // afterEach(() => {
-    //     cleanup;
-    //     jest.clearAllMocks();
-    //   });
-
+describe('App', () => {    
     it('renders App component', () => {
       render(<AuthContextProvider><TradesContextProvider><I18nextProvider i18n={i18n}><App /></I18nextProvider></TradesContextProvider></AuthContextProvider>);
       });
