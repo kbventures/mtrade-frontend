@@ -2,8 +2,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// eslint-disable-next-line no-console
-console.log(initReactI18next, 'TEST');
 // Needs to be moved to independant JSON file
 const resources = {
         en: {
