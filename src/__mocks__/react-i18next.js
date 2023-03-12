@@ -1,5 +1,5 @@
-const React = require('react');
-const reactI18next = require('react-i18next');
+const React = jest.requireActual('react');
+const reactI18next = jest.requireActual('react-i18next');
 
 const hasChildren = (node) => node && (node.children || (node.props && node.props.children));
 
