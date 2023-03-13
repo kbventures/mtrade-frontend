@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import i18n, { I18nextProvider, a } from "react-i18next";
+import i18n, { I18nextProvider} from "react-i18next";
 
 import App from "../App";
 import { AuthContextProvider } from "../context/AuthContext";
