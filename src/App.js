@@ -9,7 +9,6 @@ import Language from './routes/Language';
 // Components
 import Navbar from './components/Navbar/index';
 
-console.log('test');
 function App() {
         return (
                 <div className="App">
