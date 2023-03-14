@@ -51,7 +51,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env CI=true react-scripts test --passWithNoTests",
+    "test": "cross-env CI=false react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint:fix": "eslint . --fix",
