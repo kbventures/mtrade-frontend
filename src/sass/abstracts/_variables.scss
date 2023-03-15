@@ -1,23 +1,18 @@
-$primary-color: #282c34;
-$secondary-color: #61dafb;
-$background: #fff;
-$primary: #1aac83;
-$error: #e7195a;
-
-// Grayscale Color Palette
-$grayscale-50: hsl(0, 0%, 96.90%);
-$grayscale-100: hsl(0, 0%, 93.70%);
-$grayscale-200: hsl(0, 0%, 87.50%);
-$grayscale-300: hsl(0, 0%, 79.20%);
-$grayscale-400: hsl(0, 0%, 65.90%);
-$grayscale-500: hsl(0, 0%, 52.90%);
-$grayscale-600: hsl(0, 0%, 42.70%);
-$grayscale-700: hsl(0, 0%, 30.60%);
-$grayscale-800: hsl(0, 0%, 21.60%);
-$grayscale-900: hsl(0, 0%, 14.90%);
-
-$black: black;
-$white: white;
+// Color Palette
+    $primary-color: rgb(1, 167, 129);
+    $primary-color-variant: rgb(1, 192, 149);
+    $secondary-color: rgb(228, 75, 68);
+    $secondary-color-variant: rgb(230, 94, 88);
+    $tertiary-color: rgb(130, 186, 246);
+    $tertiary-color-variant: rgb(143, 193, 246);
+    $background-color: rgb(16, 35, 49);
+    $background-color-variant: rgb(18, 31, 39);
+    $surface-color: rgb(23, 45, 62);
+    $surface-color-variant: rgb(42, 82, 114);
+    $on-surface-color: rgb(40, 68, 91);
+    $on-surface-color-variant: rgb(14, 52, 82);
+    $text-color: rgb(255, 255, 255);
+    $text-color-variant: rgb(150, 155, 158);
 
 // PX
 $spacer-1: 4px;
