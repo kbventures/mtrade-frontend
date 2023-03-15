@@ -1,7 +1,7 @@
 @import '../../sass/base/global';
 
 header {
-    background: #fff;
+    background: $background-color;
 }
 
 .container {
@@ -29,8 +29,8 @@ nav a {
 }
 
 nav button {
-    background: $background;
-    color: $primary;
+    background: $background-color;
+    color: $primary-color;
     border: 2px solid;
     padding: 6px 10px;
     border-radius: 4px;

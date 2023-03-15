@@ -16,7 +16,7 @@ input {
 }
 
 form button {
-    background: $primary;
+    background: $background-color;
     border: 0;
     color: #fff;
     padding: 10px;
@@ -28,8 +28,8 @@ form button {
 div.error {
     padding: 10px;
     background: #ffefef;
-    border: 1px solid $error;
-    color: $error;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
     border-radius: 4px;
     margin: 20px 0;
 }

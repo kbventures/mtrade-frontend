@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './language.module.css';
+import styles from './language.module.scss';
 
 const Language = () => {
         const { t, i18n } = useTranslation();
