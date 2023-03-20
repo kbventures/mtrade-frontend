@@ -393,6 +393,15 @@ We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- PRE-COMMIT -PRE-PUSH -->
+
+## PRE-COMMIT 
+## PRE-PUSH
+
+We are using [husky](https://www.npmjs.com/package/husky) to use create git hooks to run linting pre-commit and automated tests pre-push that will stop the respective git command if the checks fail. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 
 ## License
