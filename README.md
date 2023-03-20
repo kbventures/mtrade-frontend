@@ -61,6 +61,8 @@
     <li><a href="#what-issues-have-i-faced-and-how-i-resolved-them">What issues have I faced and how I resolved them</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributing">File Structure</a></li>
+    <li><a href="#contributing">Linting</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
