@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="">
+  <a href="./images/logo_img.png">
     <img src="" alt="Logo">
   </a>
   
@@ -72,7 +72,6 @@
 
 ## About The Project
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -90,7 +89,6 @@
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,10 +129,11 @@ To get a local copy up and run follow these simple example steps.
    npm install
    ```
 4. Change client URL
+
    ```sh
    cd client/src/contexts
    Itemscontext.jsx
-   
+
      useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(`http://localhost:4001/api/products`);
@@ -142,11 +141,11 @@ To get a local copy up and run follow these simple example steps.
       setItems(json);
     };
     fetchItems();
-    
+
     cd ..
     cd routes/Basket
     index.jsx
-    
+
     async function handleSubmit(e, basket) {
     e.preventDefault();
     const url = await fetch("http://localhost:4001/api/create-checkout-session", {
@@ -156,13 +155,14 @@ To get a local copy up and run follow these simple example steps.
     }).then((i) => i.json());
     window.location.href = url;
     }
-    ```
-    
+   ```
+
 5. Change Server URLS
+
    ```sh
    cd server/src
    app.ts
-   
+
    app.post(
    '/api/create-checkout-session',
    async (req: Request<any, any, LineItem[], any>, res: Response) => {
@@ -182,7 +182,7 @@ To get a local copy up and run follow these simple example steps.
     res.json(session.url);
    }
    );
-   
+
    ```
 
 6. Add .env file inside server directory
@@ -192,6 +192,7 @@ To get a local copy up and run follow these simple example steps.
    PUBLISHABLE_KEY=YOUR_SECRET_KEY
    SECRET=YOUR_SECRET_KEY
    ```
+
 ### Running
 
 1. Start Client
@@ -213,32 +214,34 @@ To get a local copy up and run follow these simple example steps.
 
 ## Run Unit Tests
 
-   ```sh
-   cd server
-   npm run test
-   ```
-   
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+cd server
+npm run test
+```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Production build -->
 
 ## Production build
-  ```sh
-  cd server
-  npm run build
-  ```
-  ```sh
-  cd client
-  npm run build
-  ```
+
+```sh
+cd server
+npm run build
+```
+
+```sh
+cd client
+npm run build
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LEARNED -->
 
 ## What we have learned
 
-As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
+As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration. We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication, Design, Figma, managing a project(Github project) etc.
 
 ## What issues have I faced and how I resolved them
 
@@ -246,15 +249,15 @@ As a team we learned to work continuously and asynchronouslyl on designing, deve
 
 **Example:**
 
-When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
+When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked!
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
 - [] MVP
-  - [ ] 
-  - [ ] 
+  - [ ]
+  - [ ]
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -395,10 +398,11 @@ We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs
 
 <!-- PRE-COMMIT -PRE-PUSH -->
 
-## PRE-COMMIT 
+## PRE-COMMIT
+
 ## PRE-PUSH
 
-We are using [husky](https://www.npmjs.com/package/husky) to use create git hooks to run linting pre-commit and automated tests pre-push that will stop the respective git command if the checks fail. 
+We are using [husky](https://www.npmjs.com/package/husky) to use create git hooks to run linting pre-commit and automated tests pre-push that will stop the respective git command if the checks fail.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -417,4 +421,3 @@ Distributed under the MIT License. See [LICENSE](https://github.com/kbventures/m
 Ken Beaudin - [@kb9700](https://twitter.com/kb9700)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
