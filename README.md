@@ -7,8 +7,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="./images/logo_img.png">
-    <img src="" alt="Logo">
+  <a href="">
+    <img src="./images/logo_img.png" alt="Logo">
   </a>
   
   <div align="center">
