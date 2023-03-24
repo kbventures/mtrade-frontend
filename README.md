@@ -1,9 +1,5 @@
 <a name="readme-top"></a>
 
-<a href="">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=mtrade-frontend" />
-</a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -20,6 +16,9 @@
 </a>
 <a href="https://github.com/kbventures/mtrade-frontend/issues">
   <img height="28px" src="https://img.shields.io/github/issues/kbventures/mtrade-frontend" alt="Issues"/>
+</a>
+<a href="">
+  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=mtrade-frontend" />
 </a>
 </div>
 
