@@ -2,11 +2,13 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center" style="margin-bottom: 30px">
+<div align="center">
   <a href="">
     <img src="./images/logo_img.png" alt="Logo">
   </a>
-  
+  &nbsp;
+  &nbsp;
+  &nbsp;
   <div align="center">
 <a href="https://github.com/kbventures/mtrade-frontend/network/members">
   <img height="28px" src="https://img.shields.io/github/forks/kbventures/mtrade-frontend?color=6ca4cc" alt="Forks"/>
