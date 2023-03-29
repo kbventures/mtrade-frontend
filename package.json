@@ -4,8 +4,12 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "@testing-library/react": "^13.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
     "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "date-fns": "^2.29.3",
     "enzyme": "^3.11.0",

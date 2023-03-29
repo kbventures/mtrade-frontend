@@ -1,12 +1,13 @@
 @import './sass/base/global';
 
 body {
-  background: #f1f1f1;
+  background: $background-color;
+  font-family: 'Roboto';
   margin: 0;
 }
 
 .pages {
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
+  // max-width: 1400px;
+  // padding: 20px;
+  // margin: 0 auto;
 }
