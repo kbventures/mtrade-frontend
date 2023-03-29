@@ -13,7 +13,6 @@
     $on-surface-color-variant: rgb(14, 52, 82);
     $text-color: rgb(255, 255, 255);
     $text-color-variant: rgb(150, 155, 158);
-
 // PX
 $spacer-1: 4px;
 $spacer-2: 8px;
@@ -62,9 +61,10 @@ $spacer-12: 8rem;
 
 /* Rounded corners(Border Radius) */
 $rounded-0: none;
-$rounded-1: 4px;
-$rounded-2: 6px;
-$rounded-3: 8px;
+$rounded-3:3px;
+$rounded-4: 4px;
+$rounded-6: 6px;
+$rounded-8: 8px;
 // Perfect circle
 $circle: 50%;
 
