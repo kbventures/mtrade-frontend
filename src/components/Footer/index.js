@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './footer.module.scss';
-import FooterExtra from './Extra/index';
-import FooterTop from './Top';
-import FooterContent from './Content';
+// import FooterExtra from './Extra/index';
+// import FooterTop from './Top';
+// import FooterContent from './Content';
 import Bottom from './Bottom';
 
 const { FooterWrapper } = styles;
