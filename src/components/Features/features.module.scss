@@ -1,0 +1,71 @@
+@import '../../sass/base/global';
+
+.features{
+    color:$text-color;
+    background-color: $background-color;
+    padding: 32px 0;
+}
+
+.ContentWrapper{
+    padding:0 24px;
+}
+
+.Title, .SubTitle{
+    color:$primary-color;
+}
+
+.Title{
+    font-size: $twelve;
+}
+.SubTitle{
+    font-size:$twentyeight;
+    font-weight:$font-weight-semibold
+}
+
+ul {
+    list-style: none;
+}
+
+ul, li { /* reset the margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+.FeatureImg{
+    width:120px;
+}
+
+h1{
+    font-size: $sixteen;
+    font-weight:$font-weight-semibold
+}
+
+.ListContent{
+    font-size: $thirteen;
+    font-weight:$font-weight-light;
+    color: $text-color-variant;
+
+}
+
+.featuresListItem{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+
+// .FeaturesListItem{
+//     display:flex;
+//     flex-direction: row;
+// }
+.FeaturesList{
+    display:flex;
+    flex:wrap;
+}
+}
+
+
