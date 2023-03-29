@@ -9,17 +9,19 @@ import {
         faLinkedin,
         faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 import styles from './bottom.module.scss';
 
-const { FooterBottom, FooterContainer, FooterSection, Social, link } = styles;
+const { FooterBottom, FooterContainer, FooterSection, Social } = styles;
 
-export default function index() {
+const Bottom = () => {
+        const { t } = useTranslation();
         return (
                 <div className={FooterBottom}>
                         <div className={FooterContainer}>
                                 <div className={FooterSection}>
                                         <div className={Social}>
-                                                <Link style={link}>
+                                                <Link to="/">
                                                         <span>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
@@ -84,10 +86,10 @@ export default function index() {
                                                 </Link>
                                         </div>
                                 </div>
-                                <div className={FooterSection}>
-                                        Copyright &#169; 2013-2023 mTrade Inc. All rights reserved
-                                </div>
+                                <div className={FooterSection}>{t('copywright')}</div>
                         </div>
                 </div>
         );
-}
+};
+
+export default Bottom;

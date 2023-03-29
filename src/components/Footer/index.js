@@ -3,18 +3,18 @@ import styles from './footer.module.scss';
 import FooterExtra from './Extra/index';
 import FooterTop from './Top';
 import FooterContent from './Content';
-import FooterBottom from './Bottom';
+import Bottom from './Bottom';
 
 const { FooterWrapper } = styles;
 
 export default function index() {
         return (
                 <div>
-                        <FooterExtra />
+                        {/* <FooterExtra /> */}
                         <div className={FooterWrapper}>
-                                <FooterTop />
-                                <FooterContent />
-                                <FooterBottom />
+                                {/* <FooterTop />
+                                <FooterContent /> */}
+                                <Bottom />
                         </div>
                 </div>
         );

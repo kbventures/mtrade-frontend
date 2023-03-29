@@ -18,7 +18,8 @@ const resources = {
                         'add-trade':'Add trade',
                         'pair-name':'Pair name',
                         'must-be-logged-in':'You must be logged in!',
-                        'error':'error'
+                        'error':'error',
+                        'copywright':'Copyright @ 2013-2023 mTrade Inc. All rights reserved'
                 },
         },
         fr: {
@@ -36,7 +37,8 @@ const resources = {
                         'add-trade':'Ajouter titre',
                         'pair-name':"Nom de la paire",
                         'must-be-logged-in':'Vous devez être identifié!',
-                        'error':'erreur'
+                        'error':'erreur',
+                        'copywright':'Droits d\'auteur @ 2013-2023 mTrade Inc. Tous droits réservés'
                 },
         },
 };
