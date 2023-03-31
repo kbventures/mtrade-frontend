@@ -8,6 +8,7 @@ import styles from './home.module.scss';
 // components
 import TradeDetails from '../../components/TradeDetails';
 import TradeForm from '../../components/TradeForm';
+import Features from '../../components/Features/index';
 import Footer from '../../components/Footer/index';
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
                 <div className={styles.home}>
                         <div>{trades && trades.map((trade) => <TradeDetails key={trade._id} trade={trade} />)}</div>
                         <TradeForm />
+                        <Features />
                         <Footer />
                 </div>
         );
