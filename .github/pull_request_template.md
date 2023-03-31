@@ -18,3 +18,4 @@ Please delete options that are not relevant.
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] My code does not generate any new warnings or errors
 - [ ] New and existing unit tests pass locally with my changes (if relevant)
+- [ ] Check that Vercel preview branch is running without errors
