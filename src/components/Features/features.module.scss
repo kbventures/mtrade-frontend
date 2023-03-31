@@ -16,10 +16,13 @@
 
 .Title{
     font-size: $twelve;
+    font-weight: $font-weight-extrabold;
+    text-transform: uppercase;
 }
 .SubTitle{
     font-size:$twentyeight;
-    font-weight:$font-weight-semibold
+    font-weight:$font-weight-light;
+    margin:0 0 75px;
 }
 
 ul {
@@ -37,20 +40,42 @@ ul, li { /* reset the margin and padding */
 
 h1{
     font-size: $sixteen;
-    font-weight:$font-weight-semibold
+    font-weight:$font-weight-semibold;
+    line-height: 140%;
 }
 
 .ListContent{
     font-size: $thirteen;
     font-weight:$font-weight-light;
     color: $text-color-variant;
+    line-height: 130%;
+
 
 }
 
-.featuresListItem{
-    display:flex;
-    flex-direction: column;
+.FeatureListItem{
+ padding: 0 32px 32px 0;   
 }
+
+
+.ReadMoreLink{
+    margin:8px 0;
+    padding:10px 0 0;
+    font-size: $thirteen;
+    color: $primary-color;
+    
+}
+
+
+.link{
+    text-decoration: none;
+}
+
+.LinkText{
+    background-color: transparent;
+}
+
+
 
 
 
@@ -58,14 +83,54 @@ h1{
 /* 900px */
 @media only screen and (min-width: 56.25rem) {
 
-// .FeaturesListItem{
-//     display:flex;
-//     flex-direction: row;
-// }
+
+.ContentWrapper{
+        margin: 48px 0 0;
+        padding:0 64px;
+        max-width: 79rem;
+        margin: 0 auto;
+    }    
+.FeatureListItem{
+    display:flex;
+    width:29%;
+    column-gap:30px;
+
+}
 .FeaturesList{
     display:flex;
-    flex:wrap;
+    flex-wrap: wrap;
 }
+
+.FeatureImg{
+    height:120px;
+}
+
+.SubTitle{
+    font-size:$fiftyPx;
+    max-width: 10em;
+
+}
+
+// .Title{
+//     font-size: $twentyTwo;
+// }
+
+.ListContent{
+    font-size: $sixteen;
+}
+
+h1{
+    font-size: $twentyTwo;
+}
+.Listcontent{
+    font-size: $fifteen
+}
+
+.ReadMoreLink{
+    font-size: $fifteen;
+    
+}
+
 }
 
 

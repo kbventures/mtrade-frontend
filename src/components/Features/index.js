@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import SecurityImg from '../../images/icon-security.png';
 import CryptoApiImg from '../../images/icon-exchange.png';
 import TradeAnalysisImg from '../../images/icon-customizable_interface.png';
@@ -18,6 +20,9 @@ const {
         FeatureInnerItem,
         ListContent,
         FeatureImg,
+        ReadMoreLink,
+        link,
+        LinkText,
 } = styles;
 
 const Features = () => {
@@ -26,8 +31,8 @@ const Features = () => {
         return (
                 <section className={features}>
                         <div className={ContentWrapper}>
-                                <p className={Title}>Features</p>
-                                <p className={SubTitle}>World className trade analysis platform </p>
+                                <p className={Title}>{t('features')}</p>
+                                <p className={SubTitle}>{t('featuresTitle')}</p>
                                 <ul className={FeaturesList}>
                                         <li className={FeatureListItem}>
                                                 <img
@@ -36,72 +41,53 @@ const Features = () => {
                                                         alt="Trade Analysis"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>Trade Analysis Analysis</h1>
-                                                        <p className={ListContent}>
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Maxime mollitia, molestiae quas vel sint commodi
-                                                                repudiandae consequuntur voluptatum laborum numquam
-                                                                blanditiis harum quisquam eius sed odit
-                                                        </p>
+                                                        <h1>{t('tradeAnalysis')}</h1>
+                                                        <p className={ListContent}>{t('tradeAnalysisContent')}</p>
                                                 </div>
                                         </li>
-                                        <li>
+                                        <li className={FeatureListItem}>
                                                 <img
                                                         src={CryptoApiImg}
                                                         className={FeatureImg}
                                                         alt="Crypto API Intergration"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>Crypto Exchange API Intergration</h1>
-                                                        <p className={ListContent}>
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Maxime mollitia, molestiae quas vel sint commodi
-                                                                repudiandae consequuntur voluptatum laborum numquam
-                                                                blanditiis harum quisquam eius sed odit
-                                                        </p>
+                                                        <h1>{t('apiIntergration')}</h1>
+                                                        <p className={ListContent}>{t('apiIntergrationContent')}</p>
                                                 </div>
                                         </li>
-                                        <li>
+                                        <li className={FeatureListItem}>
                                                 <img
                                                         src={HistoricalAnalysis}
                                                         className={FeatureImg}
                                                         alt="Historical Analysis"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>Historical Data Analsysis</h1>
-                                                        <p className={ListContent}>
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Maxime mollitia, molestiae quas vel sint commodi
-                                                                repudiandae consequuntur voluptatum laborum numquam
-                                                                blanditiis harum quisquam eius sed odit
-                                                        </p>
+                                                        <h1>{t('historicalData')}</h1>
+                                                        <p className={ListContent}>{t('historicalDataContent')}</p>
                                                 </div>
                                         </li>
-                                        <li>
+                                        <li className={FeatureListItem}>
                                                 <img src={LiveData} className={FeatureImg} alt="Live Data" />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>Live Data</h1>
-                                                        <p className={ListContent}>
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Maxime mollitia, molestiae quas vel sint commodi
-                                                                repudiandae consequuntur voluptatum laborum numquam
-                                                                blanditiis harum quisquam eius sed odit
-                                                        </p>
+                                                        <h1>{t('liveData')}</h1>
+                                                        <p className={ListContent}>{t('liveDataContent')}</p>
                                                 </div>
                                         </li>
-                                        <li>
+                                        <li className={FeatureListItem}>
                                                 <img src={SecurityImg} className={FeatureImg} alt="Security" />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>Security</h1>
-                                                        <p className={ListContent}>
-                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Maxime mollitia, molestiae quas vel sint commodi
-                                                                repudiandae consequuntur voluptatum laborum numquam
-                                                                blanditiis harum quisquam eius sed odit
-                                                        </p>
+                                                        <h1>{t('security')}</h1>
+                                                        <p className={ListContent}>{t('securityContent')}</p>
                                                 </div>
                                         </li>
                                 </ul>
+                                <Link className={link}>
+                                        <p className={ReadMoreLink}>
+                                                <FontAwesomeIcon icon={faGreaterThan} />
+                                                <span className={LinkText}>{t('readMoreLink')}</span>
+                                        </p>
+                                </Link>
                         </div>
                 </section>
         );
