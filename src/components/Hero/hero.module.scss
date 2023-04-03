@@ -1,0 +1,37 @@
+@import '../../sass/abstracts/global';
+@import '../../sass/base/typography';
+.hero{
+    margin-top:50px;
+    width: 100%;
+}
+
+.ContentWrapper{
+    margin: 0 auto;
+    max-width: 79rem;
+    padding: 0 1.5rem;
+}
+
+.SubTitle{
+color: $text-color;
+font-size: $thirtyTwo;
+font-weight:100;
+letter-spacing: 0.02rem;
+line-height: 38px;
+margin-bottom: 2rem;
+width: 270px;
+}
+
+.Content{
+font-size: $sixteen;
+font-weight:$font-weight-light;
+letter-spacing: .02em;
+line-height: 150%;
+color: $text-color;
+}
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .hero{
+        margin-top:50px;
+    }
+}

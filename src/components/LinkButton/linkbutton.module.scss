@@ -1,0 +1,22 @@
+@import '../../sass/abstracts/global';
+@import '../../sass/base/global';
+
+
+
+
+.linkButton {
+   color:red;
+  }
+  
+.Primary{
+    background: $primary-color;
+    color:$text-color
+
+}
+
+.Secondary{
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    font-weight: $font-weight-extrabold;
+}
