@@ -7,6 +7,7 @@ const resources = {
                 translation: {
                         'logout': 'Logout',
                         'login': 'Login',
+                        'demo':'View Demo',
                         'signup': 'Signup',
                         'language': 'Language',
                         'price':'Price',
@@ -33,12 +34,15 @@ const resources = {
                         'security':'Security',
                         'securityContent':'Security is always paramount to our minds to protect our clients best interest. mTrade maintains and promotes the most up to date industry standards in client data privacy and security.',
                         'readMoreLink':'Read more about our features',
+                        'freedom':'Delivering mindful analysis of your trades',
+                        'ourAnalysis':'Your assets. Your Trades. Our Analysis.'
                 },
         },
         fr: {
                 translation: {
                         'logout': 'Se déconnecter',
                         'login': 'Connexion',
+                        'demo':'Voir la démo',
                         'signup': 'S\'inscrire',
                         'language':'Langue',
                         'price':'Prix',
@@ -62,7 +66,10 @@ const resources = {
                         'liveDataContent':'Nous fournissons des flux de données instantanés et faciles à utiliser à partir des meilleures sources avec de superbes graphiques personnalisés afin de vous permettre d\'élaborer une stratégie pour votre prochaine transaction et de minimiser les changements de contexte.',
                         'security':'Sécurité',
                         'securityContent':'La sécurité est toujours primordiale pour nous afin de protéger les meilleurs intérêts de nos clients. mTrade maintient et promeut les normes les plus récentes de l\'industrie en matière de confidentialité et de sécurité des données des clients.',
-                        'readMoreLink':'En savoir plus sur nos fonctionnalités'
+                        'readMoreLink':'En savoir plus sur nos fonctionnalités',
+                        'freedom':'Fournir une analyse consciente de vos transactions',
+                        'ouAnalysis':'Vos atouts. Vos métiers. Notre Analyse.',
+
                 },
         },
 };

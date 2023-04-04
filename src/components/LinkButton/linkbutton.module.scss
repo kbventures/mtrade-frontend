@@ -1,0 +1,33 @@
+@import '../../sass/abstracts/global';
+@import '../../sass/base/global';
+
+
+
+
+.baseLinkButton {
+text-decoration: none; 
+display: inline-block;
+font-size: $thirteen;
+font-weight: $font-weight-semibold;
+}
+
+  
+.Primary {
+    background-color: $primary-color;
+    color:$text-color;
+    padding: 12px 16px;
+
+}
+
+.Secondary{
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    font-weight: $font-weight-extrabold;
+    padding:10px 16px;
+
+}
+
+.margin{
+    margin-left: 19.5px;
+}
