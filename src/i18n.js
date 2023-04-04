@@ -7,6 +7,7 @@ const resources = {
                 translation: {
                         'logout': 'Logout',
                         'login': 'Login',
+                        'demo':'View Demo',
                         'signup': 'Signup',
                         'language': 'Language',
                         'price':'Price',
@@ -41,6 +42,7 @@ const resources = {
                 translation: {
                         'logout': 'Se déconnecter',
                         'login': 'Connexion',
+                        'demo':'Voir la démo',
                         'signup': 'S\'inscrire',
                         'language':'Langue',
                         'price':'Prix',

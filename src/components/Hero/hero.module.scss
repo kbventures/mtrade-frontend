@@ -23,7 +23,7 @@ width: 270px;
 
 .Content{
 font-size: $sixteen;
-font-weight:$font-weight-light;
+font-weight: $front-weight-extreme-light;
 letter-spacing: .02em;
 line-height: 150%;
 color: $text-color;
@@ -33,5 +33,26 @@ color: $text-color;
 @media only screen and (min-width: 56.25rem) {
     .hero{
         margin-top:50px;
+        display: flex;
+
+    }
+
+    .SubTitle{
+        font-size: $fiftyPx;
+        padding: 60px 0 0;
+        margin:0 auto;
+        text-align:center;
+        line-height: 65px;
+    }
+
+    .Content{
+        font-size: 20px;
+    }
+
+    .Row{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 0 65px;
     }
 }
