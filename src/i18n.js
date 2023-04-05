@@ -6,9 +6,10 @@ const resources = {
         en: {
                 translation: {
                         'logout': 'Logout',
-                        'login': 'Login',
+                        'login': 'Log In',
                         'demo':'View Demo',
-                        'signup': 'Signup',
+                        'signup': 'Sign Up',
+                        'forgotPassword':'Forgot password?',
                         'language': 'Language',
                         'price':'Price',
                         'amount':'Amount',
@@ -34,7 +35,7 @@ const resources = {
                         'security':'Security',
                         'securityContent':'Security is always paramount to our minds to protect our clients best interest. mTrade maintains and promotes the most up to date industry standards in client data privacy and security.',
                         'readMoreLink':'Read more about our features',
-                        'freedom':'Delivering mindful analysis of your trades',
+                        'freedom':'Delivering Mindful Analysis Of Your Trades',
                         'ourAnalysis':'Your assets. Your Trades. Our Analysis.'
                 },
         },
@@ -44,6 +45,7 @@ const resources = {
                         'login': 'Connexion',
                         'demo':'Voir la démo',
                         'signup': 'S\'inscrire',
+                        'forgotPassword':'Mot de passe oublié?',
                         'language':'Langue',
                         'price':'Prix',
                         'amount':'Montant',
@@ -67,7 +69,7 @@ const resources = {
                         'security':'Sécurité',
                         'securityContent':'La sécurité est toujours primordiale pour nous afin de protéger les meilleurs intérêts de nos clients. mTrade maintient et promeut les normes les plus récentes de l\'industrie en matière de confidentialité et de sécurité des données des clients.',
                         'readMoreLink':'En savoir plus sur nos fonctionnalités',
-                        'freedom':'Fournir une analyse consciente de vos transactions',
+                        'freedom':'Fournir Une Analyse Consciente De Vos Transactions',
                         'ouAnalysis':'Vos atouts. Vos métiers. Notre Analyse.',
 
                 },

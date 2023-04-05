@@ -9,6 +9,7 @@ text-decoration: none;
 display: inline-block;
 font-size: $thirteen;
 font-weight: $font-weight-semibold;
+border-radius:$rounded-2;
 }
 
   
@@ -30,4 +31,26 @@ font-weight: $font-weight-semibold;
 
 .margin{
     margin-left: 19.5px;
+}
+
+
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .baseLinkButton{
+        font-size: $fifteen;
+    }
+
+
+    .Primary {
+        padding: 15px 19px;
+    
+    }
+    
+    .Secondary{
+        padding:13px 19px;
+    
+    }
+
 }

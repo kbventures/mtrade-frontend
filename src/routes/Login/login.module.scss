@@ -1,31 +1,92 @@
 @import '../../sass/base/global';
+@import '../../sass/abstracts/variables';
 
-label,
-input {
-    display: block;
-}
 
-input {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+
+.authLayout{
+    background-color: $background-color;
+    color:$text-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100hv;
+    position:relative;
     width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+
 }
 
-form button {
-    background: $background-color;
+.authLayoutHeader{}
+
+.authLayoutContent{
+
+}
+
+.authLayoutLogo{
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 23px 0 20px;
+    background-color: transparent;
+}
+
+.authLogoPartOne{
+    font-size: $twentyeight;
+    font-weight: $font-weight-extrabold;
+    color: $primary-color;
+    background-color: transparent;
+}
+
+.authLogoPartTwo{
+    font-size: $twentyeight;
+    font-weight: $font-weight-normal;
+    color: lightblue;
+    margin-left: 3px;
+    background-color: transparent;
+
+}
+
+.mTradeLogo{
+height: 30px;
+}
+
+
+.title{
+    font-size: $thirty;
+    margin: 0 0 20px;
+    color: $text-color;
+    font-weight: $font-weight-extrabold;
+
+}
+
+.warning{
+    background-color: $lb-dark-green-color;
+    color: $text-color;
+    font-size: $thirteen;
+    border-radius: $rounded-4;
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.label{
+    font-size: $fourteen;
+    color: $text-color-variant;
+    font-weight: $font-weight-semibold;
+    margin: 0 0 6px;
+}
+
+.button {
+    background: $primary-color;
     border: 0;
-    color: #fff;
+    color: $text-color;
     padding: 10px;
     font-family: "Roboto";
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
 
-div.error {
+.error {
     padding: 10px;
     background: #ffefef;
     border: 1px solid $secondary-color;
@@ -34,10 +95,48 @@ div.error {
     margin: 20px 0;
 }
 
-form.login {
+.loginForm {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background-color: $background-color;
     border-radius: 4px;
+}
+
+.loginInput {
+    font-size: $sixteen;
+    padding: 0 5px 0 14px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: $surface-color !important;
+    height: 40px;
+    border: transparent;
+}
+
+
+
+
+
+.link{
+    text-decoration: none;
+}
+
+.ReadMoreLink{
+    margin:8px 0;
+    padding:10px 0 0;
+    font-size: $thirteen;
+    color: $primary-color;
+    
+}
+
+.LinkText{
+    font-size: $fourteen;
+}
+
+
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+
 }

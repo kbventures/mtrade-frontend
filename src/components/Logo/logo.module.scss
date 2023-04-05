@@ -1,0 +1,30 @@
+@import '../../sass/base/global';
+
+.authLayoutLogo{
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 23px 0 20px;
+    background-color: transparent;
+}
+
+.authLogoPartOne{
+    font-size: $twentyeight;
+    font-weight: $font-weight-extrabold;
+    color: $primary-color;
+    background-color: transparent;
+}
+
+.authLogoPartTwo{
+    font-size: $twentyeight;
+    font-weight: $font-weight-normal;
+    color: lightblue;
+    margin-left: 3px;
+    background-color: transparent;
+
+}
+
+.mTradeLogo{
+height: 30px;
+}
