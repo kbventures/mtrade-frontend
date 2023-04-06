@@ -9,7 +9,7 @@ export default function Logo() {
         return (
                 <Link style={{ textDecoration: 'none' }} to="/home">
                         <div className={authLayoutLogo}>
-                                <span className={authLogoPartOne}>m</span>
+                                <span className={authLogoPartOne}>M</span>
                                 <span className={authLogoPartTwo}>Trade</span>
                                 <img className={mTradeLogo} alt="Mindfulness Trade Logo" src={logo} />
                         </div>

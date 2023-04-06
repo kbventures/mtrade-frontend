@@ -1,0 +1,35 @@
+*** Navigation bar 
+Use New Logo
+Learn to make drop down menu wor
+
+*** Post login and functionality section
+
+
+Trades:
+Picture of Chart and anaysis information
+
+/ Page:
+Some CSS is broken now that we have CSS reset implement
+Drown Down menu For Lanuages and Section
+About Section
+Switch background colors like the original
+
+Login Page:
+Simple Drop Menu To Toggle Between Langauges
+Red Border when input missing
+There should be flicking cursor when input focussed
+Option to show hidden password characters
+Test the error field
+
+Sign Up Page:
+
+Demo Page
+Should Show Project Functionality without
+the tester needing an binance api.
+
+Other:
+Mono Responsive
+
+Testing:
+A lot more test on the front end and back end
+Cypress

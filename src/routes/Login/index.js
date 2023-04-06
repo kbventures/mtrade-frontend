@@ -3,24 +3,20 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useLogin } from '../../hooks/useLogin';
 import styles from './login.module.scss';
-import logo from '../../images/about.png';
-import LinkButton from '../../components/LinkButton/index.js';
 import Logo from '../../components/Logo/index';
 
 const {
         authLayout,
         authLayoutHeader,
         authLayoutContent,
-        authLayoutLogo,
-        authLogoPartOne,
-        authLogoPartTwo,
-        mTradeLogo,
         authLayoutHeaderRight,
+        baseLinkButton,
         loginSeperator,
         loginForm,
         warning,
         title,
         label,
+        cursor,
         loginInput,
         button,
         Error,
@@ -45,21 +41,19 @@ const Login = () => {
                 <div className={authLayout}>
                         <div className={authLayoutHeader}>
                                 <div className={authLayoutHeader}>
-                                        <div className={authLayoutLogo}>
-                                                <span className={authLogoPartOne}>m</span>
-                                                <span className={authLogoPartTwo}>Trade</span>
-                                                <img className={mTradeLogo} alt="Mindfulness Trade Logo" src={logo} />
-                                        </div>
                                         <Logo />
                                         <div className={authLayoutHeaderRight}>
-                                                <LinkButton to="/signup" className="Primary">
-                                                        {t('signup')}
-                                                </LinkButton>
-                                                <button type="button">English</button>
+                                                <Link to="/signup" className={baseLinkButton}>
+                                                        Sign Up
+                                                </Link>
+                                                <Link to="/signup" className={baseLinkButton}>
+                                                        Sign Up
+                                                </Link>
+                                                {/* <button type="button">English</button> */}
                                         </div>
                                 </div>
                         </div>
-                        <div className={loginSeperator}>Login Seperator</div>
+                        <div className={loginSeperator} />
                         <div className={authLayoutContent}>
                                 <form className={loginForm} onSubmit={handleSubmit}>
                                         <h1 className={title}>{t('login')}</h1>
@@ -68,23 +62,29 @@ const Login = () => {
                                         </p>
                                         <label className={label}>
                                                 Email
-                                                <input
-                                                        className={loginInput}
-                                                        type="email"
-                                                        onChange={(e) => setEmail(e.target.value)}
-                                                        value={email}
-                                                        placeholder="Email address"
-                                                />
+                                                <div className={cursor}>
+                                                        <input
+                                                                className={loginInput}
+                                                                type="email"
+                                                                onChange={(e) => setEmail(e.target.value)}
+                                                                value={email}
+                                                                placeholder="Email address"
+                                                        />
+                                                        <i />
+                                                </div>
                                         </label>
                                         <label className={label}>
                                                 Password
-                                                <input
-                                                        className={loginInput}
-                                                        type="password"
-                                                        onChange={(e) => setPassword(e.target.value)}
-                                                        value={password}
-                                                        placeholder="Password"
-                                                />
+                                                <div className={cursor}>
+                                                        <input
+                                                                className={loginInput}
+                                                                type="password"
+                                                                onChange={(e) => setPassword(e.target.value)}
+                                                                value={password}
+                                                                placeholder="Password"
+                                                        />
+                                                        <i />
+                                                </div>
                                         </label>
                                         <button className={button} type="submit" disabled={isLoading}>
                                                 Log in
@@ -102,13 +102,3 @@ const Login = () => {
 };
 
 export default Login;
-
-/*
-TODO
-Simple Drop Menu To Toggle Between Langauges
-Make Logo Component
-Login Seperator
-Make Login Page Responsive
-Red Border when input missing
-There should be flicking cursor when input focussed
-*/
