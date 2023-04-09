@@ -20,7 +20,7 @@
   <img height="28px" src="https://img.shields.io/github/issues/kbventures/mtrade-frontend" alt="Issues"/>
 </a>
 <a href="">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=mtrade-frontend" />
+  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=mtrade-frontend" height="28px" alt="Is MTrade Deployed Logo" />
 </a>
 </div>
 
