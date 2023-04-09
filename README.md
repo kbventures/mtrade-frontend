@@ -6,7 +6,9 @@
   <a href="">
     <img src="./images/logo_img.png" alt="Logo">
   </a>
-&nbsp; &ensp; &emsp; &thinsp;.
+<br />
+<br />
+<br />
   <div align="center">
 <a href="https://github.com/kbventures/mtrade-frontend/network/members">
   <img height="28px" src="https://img.shields.io/github/forks/kbventures/mtrade-frontend?color=6ca4cc" alt="Forks"/>
