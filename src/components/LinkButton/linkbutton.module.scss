@@ -17,7 +17,10 @@ border-radius:$rounded-2;
     background-color: $primary-color;
     color:$text-color;
     padding: 12px 16px;
+}
 
+.Primary:hover{
+    background-color: $primary-color-variant;
 }
 
 .PrimaryFullWidth{
@@ -29,6 +32,8 @@ border-radius:$rounded-2;
     font-size: $fourteen;
 }
 
+
+
 .Secondary{
     background: transparent;
     border: 2px solid $primary-color;
@@ -36,6 +41,10 @@ border-radius:$rounded-2;
     font-weight: $font-weight-extrabold;
     padding:10px 16px;
 
+}
+
+.Secondary:hover{
+    border: 2px solid $primary-color-variant;
 }
 
 .margin{
