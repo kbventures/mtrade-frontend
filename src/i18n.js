@@ -36,7 +36,13 @@ const resources = {
                         'securityContent':'Security is always paramount to our minds to protect our clients best interest. mTrade maintains and promotes the most up to date industry standards in client data privacy and security.',
                         'readMoreLink':'Read more about our features',
                         'freedom':'Delivering Mindful Analysis Of Your Trades',
-                        'ourAnalysis':'Your assets. Your Trades. Our Analysis.'
+                        'ourAnalysis':'Your assets. Your Trades. Our Analysis.',
+                        'visitingSiteWarning':'Please check you are visiting https://mtrade-frontend.vercel.app/',
+                        'email':'Email',
+                        'password':'Password',
+                        'emailPlaceholder':'Email address',
+                        'english':'English',
+                        'french':'French',
                 },
         },
         fr: {
@@ -71,7 +77,12 @@ const resources = {
                         'readMoreLink':'En savoir plus sur nos fonctionnalités',
                         'freedom':'Fournir Une Analyse Consciente De Vos Transactions',
                         'ouAnalysis':'Vos atouts. Vos métiers. Notre Analyse.',
-
+                        'visitingSiteWarning':'Veuillez vérifier que vous visitez https://mtrade-frontend.vercel.app/',
+                        'email':'Courriel',
+                        'password':'Mot de passe',
+                        'emailPlaceholder':'Adresse courriel',
+                        'english':'Anglais',
+                        'french':'Français',
                 },
         },
 };
