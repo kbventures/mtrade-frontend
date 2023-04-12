@@ -139,6 +139,11 @@ width: 100%;
     border: transparent;
 }
 
+input:focus{
+    outline:none;
+    border: 1px solid $primary-color;
+}
+
 
 .link{
     text-decoration: none;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './logo.module.scss';
-import logo from '../../images/about.png';
+import logo from '../../../images/about.png';
 
 const { authLayoutLogo, authLogoPartOne, authLogoPartTwo, mTradeLogo } = styles;
 
