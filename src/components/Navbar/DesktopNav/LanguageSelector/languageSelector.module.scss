@@ -2,33 +2,31 @@
 @import '../../../../sass/abstracts/variables';
 
 
-
 .container{
-    display:block;
-    // width:100%;
+
 }
 
 .buttonToggle{
     color:$text-color;
     font-size: $fourteen;
-    width: 100%;
-    background-color: transparent;
+    background-color: $background-color;
     // border: 1px solid $lp-border-color;
-    // height: 35px;
+    height: 35px;
     display: flex;
-    // justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-
-
-    background: none;
-	color: inherit;
-	border: none;
+    
+    align-content: center;
+    align-self: center;
+    // padding:5px 10px;
+    border: none;
 	padding: 0;
-	font: inherit;
-	// cursor: pointer;
-	outline: inherit;
+}
 
+
+.buttonLabel{
+    text-align: center;
+    background-color: $background-color;
 }
 
 .icon{
@@ -38,7 +36,7 @@
 
 .dropDownMenu{
     margin-top: 5px;
-    background: $background-color-variant;
+    background: $surface-color;
     position: absolute;
     padding:5px;
     // left: 20px;
@@ -64,17 +62,17 @@
 
 /* 900px */
 @media only screen and (min-width: 56.25rem) {
-    .buttonToggle{
-        width: 120px;
-    }
+    // .buttonToggle{
+    //     width: 120px;
+    // }
 
-    .buttonToggle{
-        font-size: $fifteen;
-    }
+    // .buttonToggle{
+    //     font-size: $fifteen;
+    // }
 
-    .container{
-        object-fit: contain;
-    }
+    // .container{
+    //     object-fit: contain;
+    // }
 
     // .container{
     //     width:100%;
@@ -94,11 +92,11 @@
 
 /* 900px */
 @media only screen and (max-width: 56.25rem) {
-    .container{
-        width:100%;
-    }
-    .dropDownMenu{
-        left: 20px;
-        width: calc(100vw - 40px);
-    }
+    // .container{
+    //     width:100%;
+    // }
+    // .dropDownMenu{
+    //     left: 20px;
+    //     width: calc(100vw - 40px);
+    // }
 }

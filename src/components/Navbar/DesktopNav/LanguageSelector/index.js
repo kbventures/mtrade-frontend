@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import styles from './languageSelector.module.scss';
 
-const { container, dropDown, buttonToggle, icon, dropDownMenu, dropDownMenuItem } = styles;
+const { container, dropDown, buttonToggle, icon, dropDownMenu, dropDownMenuItem, buttonLabel } = styles;
 
 export default function LanguageSelector() {
         const [open, setOpen] = useState(false);
@@ -37,7 +37,9 @@ export default function LanguageSelector() {
                                         onMouseEnter={handleOpen}
                                         onMouseLeave={handleOpen}
                                 >
-                                        {i18n.language === 'en' ? t('english') : t('french')}
+                                        <span className={buttonLabel}>
+                                                {i18n.language === 'en' ? t('english') : t('french')}
+                                        </span>
                                         <FontAwesomeIcon className={icon} icon={faGreaterThan} />
                                 </button>
                                 {open && (

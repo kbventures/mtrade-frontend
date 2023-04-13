@@ -22,12 +22,12 @@ export default function DeskTopNav() {
                                         <ul className={menuRight}>
                                                 <li className={menuItemsRight}>
                                                         <Link className={`${link} ${login}`} to="/login">
-                                                                Log In
+                                                                <span>Log In</span>
                                                         </Link>
                                                 </li>
                                                 <li className={menuItemsRight}>
                                                         <Link className={`${link} ${signup}`} to="/signup">
-                                                                Sign Up
+                                                                <span>Sign Up</span>
                                                         </Link>
                                                 </li>
                                                 <li className={menuItemsRight}>
