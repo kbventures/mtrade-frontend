@@ -33,3 +33,8 @@ Mono Responsive
 Testing:
 A lot more test on the front end and back end
 Cypress
+
+
+
+LOGO:
+Try Extrated Colors From Logo and perhaps use gradients on letters

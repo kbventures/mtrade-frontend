@@ -1,0 +1,35 @@
+@import '../../../../sass/base/global';
+@import '../../../../sass/abstracts/variables';
+
+.authLayoutLogo{
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 17px 0 0 0px;
+    background-color: transparent;
+    gap:3px;
+}
+
+.authLogoPartOne{
+    font-size: $thirtyfive;
+    font-weight: $font-weight-extrabold;
+    color: $primary-color;
+    background-color: transparent;
+    padding:0;
+    margin:0;
+}
+
+.authLogoPartTwo{
+    font-size: $thirtyfive;
+    font-weight: $font-weight-normal;
+    color: $tertiary-color;
+    margin-left: 3px;
+    background-color: transparent;
+    padding:0;
+    margin:0;
+}
+
+.mTradeLogo{
+height: 90px;
+}

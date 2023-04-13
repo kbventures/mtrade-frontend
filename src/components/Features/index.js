@@ -18,6 +18,7 @@ const {
         FeaturesList,
         FeatureListItem,
         FeatureInnerItem,
+        cardTitle,
         ListContent,
         FeatureImg,
         ReadMoreLink,
@@ -41,7 +42,7 @@ const Features = () => {
                                                         alt="Trade Analysis"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>{t('tradeAnalysis')}</h1>
+                                                        <h1 className={cardTitle}>{t('tradeAnalysis')}</h1>
                                                         <p className={ListContent}>{t('tradeAnalysisContent')}</p>
                                                 </div>
                                         </li>
@@ -52,7 +53,7 @@ const Features = () => {
                                                         alt="Crypto API Intergration"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>{t('apiIntergration')}</h1>
+                                                        <h1 className={cardTitle}>{t('apiIntergration')}</h1>
                                                         <p className={ListContent}>{t('apiIntergrationContent')}</p>
                                                 </div>
                                         </li>
@@ -63,21 +64,21 @@ const Features = () => {
                                                         alt="Historical Analysis"
                                                 />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>{t('historicalData')}</h1>
+                                                        <h1 className={cardTitle}>{t('historicalData')}</h1>
                                                         <p className={ListContent}>{t('historicalDataContent')}</p>
                                                 </div>
                                         </li>
                                         <li className={FeatureListItem}>
                                                 <img src={LiveData} className={FeatureImg} alt="Live Data" />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>{t('liveData')}</h1>
+                                                        <h1 className={cardTitle}>{t('liveData')}</h1>
                                                         <p className={ListContent}>{t('liveDataContent')}</p>
                                                 </div>
                                         </li>
                                         <li className={FeatureListItem}>
                                                 <img src={SecurityImg} className={FeatureImg} alt="Security" />
                                                 <div className={FeatureInnerItem}>
-                                                        <h1>{t('security')}</h1>
+                                                        <h1 className={cardTitle}>{t('security')}</h1>
                                                         <p className={ListContent}>{t('securityContent')}</p>
                                                 </div>
                                         </li>

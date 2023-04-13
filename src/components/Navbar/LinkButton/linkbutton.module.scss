@@ -1,0 +1,141 @@
+@import '../../../sass/abstracts/global';
+@import '../../../sass/base/global';
+
+
+
+ .baseLinkButton:link, .baseLinkButton:visited, .baseLinkButton:hover, .baseLinkButton:active {
+    text-decoration: none;     
+    }
+.baseLinkButton {
+// display: inline-block;
+font-size: $fourteen;
+font-weight: $font-weight-semibold;
+border-radius:$rounded-2;
+
+}
+
+  
+.Primary {
+    background-color: $primary-color;
+    color:$text-color;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 0;
+    font-weight: $font-weight-extrabold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 15px;
+    border: 2px solid $primary-color;
+}
+
+.PrimaryFullWidth{
+    background-color: $primary-color;
+    color:$text-color;
+    padding: 12px 16px;
+    width: 100%;
+    text-align: center;
+    font-size: $fourteen;
+}
+
+.Secondary{
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    font-weight: $font-weight-extrabold;
+    padding:0 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+
+// .Secondary:link, .Secondary:visited{
+//     text-decoration: none;
+// }
+
+
+// .margin{
+//     margin-left: 19.5px;
+// }
+
+
+
+
+// /* 900px */
+// @media only screen and (min-width: 56.25rem) {
+//     .baseLinkButton{
+//         font-size: $fifteen;
+//     }
+
+
+//     .Primary {
+//         padding: 0 30px;
+    
+//     }
+    
+//     .Secondary{
+//         padding:13px 19px;
+    
+//     }
+
+// }
+
+
+/* 900px */
+@media only screen and (max-width: 56.25rem) {
+    .baseLinkButton:link, .baseLinkButton:visited, .baseLinkButton:hover, .baseLinkButton:active {
+        text-decoration: none;     
+        }
+    .baseLinkButton {
+    // display: inline-block;
+    font-size: $fourteen;
+    font-weight: $font-weight-semibold;
+    border-radius:$rounded-2;
+    
+    }
+    
+      
+    .Primary {
+        background-color: $primary-color;
+        color:$text-color;
+        padding: 0 30px;
+        height: 50px;
+        border-radius: 0;
+        font-weight: $font-weight-extrabold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 15px;
+        border: 2px solid $primary-color;
+    }
+    
+    .PrimaryFullWidth{
+        background-color: $primary-color;
+        color:$text-color;
+        padding: 12px 16px;
+        width: 100%;
+        text-align: center;
+        font-size: $fourteen;
+    }
+    
+    .Secondary{
+        background: transparent;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        font-weight: $font-weight-extrabold;
+        padding:0 30px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    
+    }
+
+}

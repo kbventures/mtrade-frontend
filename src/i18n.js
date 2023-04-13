@@ -5,6 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
         en: {
                 translation: {
+                        'aboutus':'About Us',
                         'logout': 'Logout',
                         'login': 'Log In',
                         'demo':'View Demo',
@@ -36,11 +37,18 @@ const resources = {
                         'securityContent':'Security is always paramount to our minds to protect our clients best interest. mTrade maintains and promotes the most up to date industry standards in client data privacy and security.',
                         'readMoreLink':'Read more about our features',
                         'freedom':'Delivering Mindful Analysis Of Your Trades',
-                        'ourAnalysis':'Your assets. Your Trades. Our Analysis.'
+                        'ourAnalysis':'Your assets. Your Trades. Our Analysis.',
+                        'visitingSiteWarning':'Please check you are visiting https://mtrade-frontend.vercel.app/',
+                        'email':'Email',
+                        'password':'Password',
+                        'emailPlaceholder':'Email address',
+                        'english':'English',
+                        'french':'French',
                 },
         },
         fr: {
                 translation: {
+                        'aboutus':'À propos de nous',
                         'logout': 'Se déconnecter',
                         'login': 'Connexion',
                         'demo':'Voir la démo',
@@ -58,6 +66,8 @@ const resources = {
                         'must-be-logged-in':'Vous devez être identifié!',
                         'error':'erreur',
                         'copywright':'Droits d\'auteur @ 2013-2023 mTrade Inc. Tous droits réservés',
+                        'features':'Caractéristiques',
+                        'featuresTitle':'Plateforme d\'analyse commerciale de classe mondiale',
                         'tradeAnalysis':'Analyse commericale',
                         'tradeAnalysisContent':'Notre plateforme fournit une analyse approfondie et consciente de votre histoire commerciale. Donnant en effet un vrai sens sur vos performances de trading et comment les améliorer potentiellement vos métiers.',
                         'apiIntergration':'Intégration de l\'API Crypto',
@@ -70,8 +80,13 @@ const resources = {
                         'securityContent':'La sécurité est toujours primordiale pour nous afin de protéger les meilleurs intérêts de nos clients. mTrade maintient et promeut les normes les plus récentes de l\'industrie en matière de confidentialité et de sécurité des données des clients.',
                         'readMoreLink':'En savoir plus sur nos fonctionnalités',
                         'freedom':'Fournir Une Analyse Consciente De Vos Transactions',
-                        'ouAnalysis':'Vos atouts. Vos métiers. Notre Analyse.',
-
+                        'ourAnalysis':'Vos atouts. Vos métiers. Notre Analyse.',
+                        'visitingSiteWarning':'Veuillez vérifier que vous visitez https://mtrade-frontend.vercel.app/',
+                        'email':'Courriel',
+                        'password':'Mot de passe',
+                        'emailPlaceholder':'Adresse courriel',
+                        'english':'Anglais',
+                        'french':'Français',
                 },
         },
 };

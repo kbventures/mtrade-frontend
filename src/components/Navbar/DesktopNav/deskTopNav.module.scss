@@ -1,0 +1,89 @@
+@import '../../../sass/base/global';
+@import '../../../sass/abstracts/global';
+
+
+.deskTopNav{
+    color: $text-color;
+    display: flex; 
+    justify-content: space-between;
+    // height: 75px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;;
+    gap: 25px;
+
+}
+.navRight{
+    display: flex;
+    align-items: center;
+    align-self:  left;
+}
+
+.menuLeft{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.menuRight{
+    display: flex;
+    flex-direction: row;
+    gap: 25px; 
+    align-items: center;
+}
+
+.menuItemsLeft:hover, .menuItemsRight:hover{
+        color: $primary-color;
+}
+
+.signup{
+    color: $primary-color;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+}
+
+.signup:hover{
+    color: $primary-color-variant;
+}
+
+
+.login{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.login:hover{
+    color: $primary-color;
+}
+
+.link{
+    text-decoration: none;
+    
+}
+
+.span{
+    
+}
+
+
+
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .deskTopNav{
+        margin-top: 10px;
+    }
+}
+
+
+/* 900px */
+@media only screen and (max-width: 992px) {
+.deskTopNav{
+    display:none;
+}
+}
