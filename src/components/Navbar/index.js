@@ -1,14 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLogout } from '../../hooks/useLogout';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import Logo from './Logo/index';
 import styles from './navbar.module.scss';
-// import HamburgerMenu from '../HamburgerMenu/index';
 import LinkButton from './LinkButton/index';
 import DeskTopNav from './DesktopNav';
+import LanguageSelector from './LanguageSelector/index';
 
-const { navigationContainer, mobileNav, menuToggle, menuButtonContainer, menuButton, menu, menuItem } = styles;
+const { navigationContainer, mobileNav, menuToggle, menuButtonContainer, menuButton, menu, menuItem, link } = styles;
 
 const Navbar = () => {
         const { t } = useTranslation();
@@ -27,12 +28,8 @@ const Navbar = () => {
 
         // New
         const [checked, setChecked] = React.useState(false);
-        // eslint-disable-next-line no-console
-        console.log(checked);
         const checkHandler = () => {
                 setChecked(!checked);
-                // eslint-disable-next-line no-console
-                console.log(checked);
         };
         return (
                 // <header>
@@ -60,7 +57,6 @@ const Navbar = () => {
                 <div className={navigationContainer}>
                         <nav className={mobileNav}>
                                 <Logo />
-                                {/* <p>Checked? {checked.toString()}</p> */}
                                 <input
                                         className={menuToggle}
                                         type="checkbox"
@@ -72,17 +68,22 @@ const Navbar = () => {
                                         <div className={menuButton} />
                                 </label>
                                 <ul className={menu}>
-                                        <li className={menuItem}>About Us</li>
-                                        <li className={menuItem}>English</li>
+                                        <li className={menuItem}>
+                                                <Link className={link} to="">
+                                                        {t('aboutus')}
+                                                </Link>
+                                        </li>
+                                        {/* <li className={menuItem}>
+                                                <LanguageSelector />
+                                        </li> */}
                                         <li className={menuItem}>
                                                 <LinkButton to="/login" className="Secondary">
-                                                        Log In
+                                                        {t('login')}
                                                 </LinkButton>
                                                 <LinkButton to="/signup" className="Primary">
-                                                        Sign up
+                                                        {t('signup')}
                                                 </LinkButton>
                                         </li>
-                                        {/* <li className={menuItem}>Test</li> */}
                                 </ul>
                         </nav>
                         <DeskTopNav />

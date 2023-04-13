@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styles from './deskTopNav.module.scss';
 import Logo from './Logo/index';
 import LanguageDetector from './LanguageSelector/index';
 
-const { deskTopNav, navLeft, navRight, menuLeft, menuRight, menuItemsLeft, menuItemsRight, signup, login, link } =
+const { deskTopNav, navLeft, navRight, menuLeft, menuRight, menuItemsLeft, menuItemsRight, signup, login, link, span } =
         styles;
 
 export default function DeskTopNav() {
+        const { t } = useTranslation();
+
         return (
                 <div>
                         <nav className={deskTopNav}>
@@ -22,12 +25,12 @@ export default function DeskTopNav() {
                                         <ul className={menuRight}>
                                                 <li className={menuItemsRight}>
                                                         <Link className={`${link} ${login}`} to="/login">
-                                                                <span>Log In</span>
+                                                                <span className={span}>{t('login')}</span>
                                                         </Link>
                                                 </li>
                                                 <li className={menuItemsRight}>
                                                         <Link className={`${link} ${signup}`} to="/signup">
-                                                                <span>Sign Up</span>
+                                                                <span className={span}>{t('signup')}</span>
                                                         </Link>
                                                 </li>
                                                 <li className={menuItemsRight}>

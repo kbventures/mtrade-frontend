@@ -1,5 +1,5 @@
-@import '../../../../sass/base//global';
-@import '../../../../sass/abstracts/variables';
+@import '../../../sass//base/global';
+@import '../../../sass//abstracts/variables';
 
 
 .dropDown{
@@ -7,21 +7,19 @@
     justify-content: center;
     align-items: center;
     margin-right: 5px;
+    display: block;
 }
 
 .buttonToggle{
     color:$text-color;
     font-size: $fourteen;
     background-color: $background-color;
-    // border: 1px solid $lp-border-color;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     align-content: center;
     align-self: center;
-    // padding:5px 10px;
     border: none;
 	padding: 0;
 }
@@ -43,14 +41,11 @@
 .dropDownMenu{
     margin-top: 5px;
     background: $surface-color;
-    position: absolute;
     padding:5px;
-    // left: 20px;
-    // width: calc(100vw - 40px);
-    top: 85px;
-    right: 0;
     width: 200px;
     line-height: 20px;
+    height: 200px;
+    display: block;
 }
 
 .dropDownMenuItem{
@@ -60,6 +55,7 @@
     text-align: left;
     padding: 5px 7px;
     font-size: $fourteen;
+    display: block;
     
 }
 
@@ -74,6 +70,8 @@
 .icon{
     color:inherit;
 }
+
+
 
 /* 900px */
 @media only screen and (min-width: 56.25rem) {

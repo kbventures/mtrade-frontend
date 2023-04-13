@@ -121,8 +121,18 @@
     margin-top: 0px;
     transform: rotate(-405deg);
   }
+
+  .link{
+    text-decoration: none;
+    color: $text-color;
+    font-size: $fourteen;
+  }
+
+  .link:hover{
+    color:$primary-color;
+  }
   
-  @media (max-width: 900px) {
+  @media (max-width: 993px) {
 
     .menuButtonContainer {
       display: flex;
@@ -192,7 +202,7 @@
 
 
 
-  @media (min-width: 901px) {
+  @media (min-width: 993px) {
 
     .mobileNav{
       display:none;

@@ -12,7 +12,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import styles from './bottom.module.scss';
 
-const { FooterBottom, FooterContainer, FooterSection, Social } = styles;
+const { FooterBottom, FooterContainer, FooterSection, Social, span } = styles;
 
 const Bottom = () => {
         const { t } = useTranslation();
@@ -22,7 +22,7 @@ const Bottom = () => {
                                 <div className={FooterSection}>
                                         <div className={Social}>
                                                 <Link to="/">
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -31,7 +31,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -40,7 +40,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -49,7 +49,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -58,7 +58,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -67,7 +67,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"
@@ -76,7 +76,7 @@ const Bottom = () => {
                                                         </span>
                                                 </Link>
                                                 <Link>
-                                                        <span>
+                                                        <span className={span}>
                                                                 <FontAwesomeIcon
                                                                         size="2x"
                                                                         color="rgb(255, 255, 255)"

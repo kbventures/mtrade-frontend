@@ -14,7 +14,7 @@
 .navLeft{
     display: flex;
     align-items: center;;
-    gap: 7px;
+    gap: 25px;
 
 }
 .navRight{
@@ -26,13 +26,14 @@
 .menuLeft{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 25px;
 }
 
 .menuRight{
     display: flex;
     flex-direction: row;
-    gap: 15px; 
+    gap: 25px; 
+    align-items: center;
 }
 
 .menuItemsLeft:hover, .menuItemsRight:hover{
@@ -61,4 +62,28 @@
 
 .link{
     text-decoration: none;
+    
+}
+
+.span{
+    
+}
+
+
+
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .deskTopNav{
+        margin-top: 10px;
+    }
+}
+
+
+/* 900px */
+@media only screen and (max-width: 992px) {
+.deskTopNav{
+    display:none;
+}
 }

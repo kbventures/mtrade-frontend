@@ -30,13 +30,8 @@ export default function LanguageSelector() {
 
         return (
                 <div className={container}>
-                        <div className={dropDown}>
-                                <button
-                                        className={buttonToggle}
-                                        type="button"
-                                        onMouseEnter={handleOpen}
-                                        onMouseLeave={handleOpen}
-                                >
+                        <div className={dropDown} onMouseEnter={handleOpen} onMouseLeave={handleOpen}>
+                                <button className={buttonToggle} onClick={handleOpen} type="button">
                                         <span className={buttonLabel}>
                                                 {i18n.language === 'en' ? t('english') : t('french')}
                                         </span>
