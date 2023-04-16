@@ -7,7 +7,7 @@ const LinkButton = ({ to, children, className, otherClassName }) => {
         const linkButtonClass = `${styles.baseLinkButton} ${styles[className]} ${styles[otherClassName]}`;
 
         return (
-                <Link to={to}>
+                <Link className={styles.link} to={to}>
                         <p className={linkButtonClass}>{children}</p>
                 </Link>
         );
