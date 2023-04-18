@@ -5,9 +5,10 @@ import Home from './routes/Home/index';
 import Login from './routes/Login';
 import Signup from './routes/Signup/index';
 import Language from './routes/Language';
+import Demo from './routes/Demo';
 
 // Components
-import Navbar from './components/Navbar/index';
+// import Navbar from './components/Navbar/index';
 
 function App() {
         return (
@@ -19,6 +20,7 @@ function App() {
                                                 <Route path="login" element={<Login />} />
                                                 <Route path="signup" element={<Signup />} />
                                                 <Route path="language" element={<Language />} />
+                                                <Route path="demo" element={<Demo />} />
                                         </Routes>
                                 </div>
                         </BrowserRouter>
