@@ -2,6 +2,147 @@
 @import '../../sass/abstracts/variables';
 
 
+
+.headerWrapper{
+
+}
+
+.mainContainer{
+    margin-top: 52px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: $surface-color;
+    border: 1px solid $background-color-variant;
+}
+
+.settingsSideNav{
+padding: 20px 0; 
+}
+
+
+.accountSettingsSideNav{}
+
+.accountSettingsSideNavWrapper{}
+
+.accountSettingsSideNavList{}
+
+.accountSettingsSideNavListSub{}
+
+
+.mainSideNav{
+    padding: 20px 10px;
+    min-height: 700px; 
+    width: 100%; 
+    min-width: 0;
+    background-color: $surface-color;
+
+}
+
+.accountSettingsWrapper{
+    position: relative;
+    padding-bottom: 68px;
+    min-height: 610px;
+    letter-spacing: 0.02em;
+}
+
 .accountSettingsTitle{
     color:$text-color;
+    margin: 12px 0 30px;
+    line-height: 110%;
+    font-size: $thirty;
 }
+
+.settingsTabHeader{
+    display: flex;
+    justify-content: flex-start;
+    font-size: $eighteen;
+    margin-bottom:20px; 
+    border-bottom: 1px solid $background-color;
+    min-width: fit-content;
+}
+
+.settingsTabHeaderTitle{
+    color: $tertiary-color;
+    border-bottom: 5px solid $tertiary-color;
+}
+
+.settingsTabContent{}
+
+.userSettingsItemWrapper{
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid $background-color;
+    padding: 5px 0; 
+    max-width: 1000px;
+    flex-wrap: wrap;
+    height: 45px;
+}
+
+.userSettingsItemLabel{
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-weight: $font-weight-extrabold;
+    font-size: $eleven;
+    width: 200px;
+    line-height: 11px;
+}
+
+.userSettingsItemContent{
+    color:$text-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.userSettingsItemValue{
+    font-size: $thirteen;
+}
+
+.userSettingsItemRightContent{}
+
+.userSettingsItemRightButton{
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-weight: $font-weight-extrabold;
+    font-size: $eleven;
+    line-height: 11px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+/* 600px */
+@media only screen and (min-width:600px) {
+    .mainSideNav{
+        padding: 18px 22px;
+    }
+
+    .userSettingsItemWrapper{
+        flex-wrap: nowrap;
+    }
+}
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .mainSideNav{
+        padding: 22px 15px 60px 44px;
+    }
+}
+
+

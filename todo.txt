@@ -38,3 +38,16 @@ Cypress
 
 LOGO:
 Try Extrated Colors From Logo and perhaps use gradients on letters
+
+
+
+
+
+*** CURRENT ***
+Post Login Page
+Fix Navigation bar
+Introduce working language selector in account menu section
+Responsive Language Selectgor
+Build Account from mobile to full screen(responsive)
+Build Secondzry Navbar
+Build drop downn account menu;
