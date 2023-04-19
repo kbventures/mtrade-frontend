@@ -51,3 +51,14 @@ Responsive Language Selectgor
 Build Account from mobile to full screen(responsive)
 Build Secondzry Navbar
 Build drop downn account menu;
+
+
+THINGS YOU SHOULD TRY TO REPLICATE
+Before Deadline
+
+Navigation Bar
+Market History Page
+Reports
+
+Notifications(Take Picture)
+Log out(Last thing)
