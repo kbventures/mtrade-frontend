@@ -2,11 +2,6 @@
 @import '../../sass/abstracts/variables';
 
 
-
-.headerWrapper{
-
-}
-
 .mainContainer{
     margin-top: 52px;
     position: relative;
@@ -64,8 +59,6 @@
     border-bottom: 5px solid $tertiary-color;
 }
 
-.settingsTabContent{}
-
 .userSettingsItemWrapper{
     display: flex; 
     align-items: center;
@@ -97,8 +90,6 @@
 .userSettingsItemValue{
     font-size: $thirteen;
 }
-
-.userSettingsItemRightContent{}
 
 .userSettingsItemRightButton{
     text-transform: uppercase;

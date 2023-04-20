@@ -1,0 +1,84 @@
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/base/global';
+
+
+.settingsSideNav{
+    display:none;
+}
+
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .mainSideNav{
+        padding: 22px 15px 60px 44px;
+    }
+
+    .settingsSideNav{
+        display: block;
+        padding: 20px 0; 
+    }
+
+    .accountSettingsSideNavWrapper{
+        // display: block;
+        position: relative;
+        padding: 0 12px;
+        width: 245px;
+        font-size: $fifteen;
+    }
+
+    .accountSettingsSideNavList{
+        // display: block;
+        margin-top: 6px;
+    }
+
+    .accountSettingsSideNavListSub{
+        // display: block;
+        margin-top: 15px;
+    }
+
+    .accountSettingsSideNavListItem{
+        // display: block;
+        color: $text-color;
+        background-color: $on-surface-color;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        line-height: 22px;
+        border-bottom: 1px solid $surface-color;
+        letter-spacing: .02em;
+        text-decoration: none;
+    }
+
+    .accountSettingsSideNavListItem:hover{
+       background-color: $on-surface-color-variant;
+    
+        .icon{
+            position: absolute;
+            display: block;
+            top:15px;
+            right:15px;
+        }
+    
+    }
+
+    .active:after{
+        background-color: $tertiary-color;
+        content: " ";
+        position: absolute;
+        height: calc(100% + 2px);
+        top: -1px;
+        right: -1px;
+        width: 4px;
+    }
+
+    .svg{
+        margin-right: 20px;
+        flex: 0 0 1rem;
+    }
+
+    .icon{
+        display: none;
+    }
+
+}

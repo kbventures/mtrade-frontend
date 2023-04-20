@@ -1,0 +1,82 @@
+@import '../../../sass/base/global';
+@import '../../../sass/abstracts/global';
+
+
+.mobileNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color;
+    color: $text-color;
+    height: 50px;
+    padding: 0 24px;
+    margin-top: 6px;
+  }
+  
+  .link{
+    text-decoration: none;
+    color: $text-color;
+    font-size: $fourteen;
+  }
+
+  .link:hover{
+    color:$primary-color;
+  }
+  
+
+  .greatherThan{
+    display: block;
+  }
+
+  .leftContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color;
+    color: $text-color;
+    height: 50px;
+    width: 200px;
+  }
+
+  .toggleButton{
+    background: none;
+    border: none;
+  }
+ 
+
+  .sideBar{
+    display: none;
+  }
+
+  .open{
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    z-index: 1000;
+  }
+
+
+
+
+  /* 900px */
+@media only screen and (min-width: 56.25rem) {
+.toggleButton{
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

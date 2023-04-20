@@ -1,18 +1,33 @@
-*** Navigation bar 
-Use New Logo
-Learn to make drop down menu wor
+*** PRIORITY ***
 
-*** Post login and functionality section
+Navbar Phase
+
+Recreate the mobile navbar using your personal website code.
+Move the haburger menu to the left of the Logo
+Create a drop down menu using a person icon similar to language selector in the Post login main page.
+
+Phase 2
+Create Trade Spot Trade  Screen With Stub Data
+
+Phase 3
+Account Summary Page
+
+Phase 4
+Search Bar Main screen
+
+Phase 5
+Can be done after due date 28 because it can be acessed without auth
+Create Logout Screen
+
+
+
+
+
 
 
 Trades:
 Picture of Chart and anaysis information
 
-/ Page:
-Some CSS is broken now that we have CSS reset implement
-Drown Down menu For Lanuages and Section
-About Section
-Switch background colors like the original
 
 Login Page:
 Simple Drop Menu To Toggle Between Langauges

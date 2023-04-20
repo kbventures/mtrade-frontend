@@ -16,9 +16,10 @@ import {
         faLightbulb,
         faCheck,
 } from '@fortawesome/free-solid-svg-icons';
-import NavBar from '../../components/Navbar/index';
+import Footer from './Footer/Bottom/index';
 import styles from './demo.module.scss';
-import BottomFooter from '../../components/Footer/Bottom/index';
+import NavBar from './Navbar/index';
+import SideBarMenu from './SideBarMenu/index';
 
 const {
         headerWrapper,
@@ -49,199 +50,12 @@ const {
 export default function Demo() {
         return (
                 <div>
-                        <div className={headerWrapper}>{/* <NavBar /> */}</div>
+                        <div className={headerWrapper}>
+                                <NavBar />
+                        </div>
                         <div className={mainContainer}>
                                 <div className={content}>
-                                        <div className={settingsSideNav}>
-                                                <div className={accountSettingsSideNavWrapper}>
-                                                        <div className={accountSettingsSideNavList}>
-                                                                <Link
-                                                                        className={`${accountSettingsSideNavListItem} ${active}`}
-                                                                >
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faUser}
-                                                                                className={svg}
-                                                                        />
-                                                                        Account
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faKey}
-                                                                                className={svg}
-                                                                        />
-                                                                        Binance API Key
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faArrowTrendUp}
-                                                                                className={svg}
-                                                                        />
-                                                                        Trades
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faLock}
-                                                                                className={svg}
-                                                                        />
-                                                                        Security
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faEnvelope}
-                                                                                className={svg}
-                                                                        />
-                                                                        Notifications
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faTrophy}
-                                                                                className={svg}
-                                                                        />
-                                                                        Leaderboard
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faChartLine}
-                                                                                className={svg}
-                                                                        />
-                                                                        Trade Analysis
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faChartPie}
-                                                                                className={svg}
-                                                                        />
-                                                                        Reports
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                        </div>
-                                                        <div className={accountSettingsSideNavListSub}>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faLightbulb}
-                                                                                className={svg}
-                                                                        />
-                                                                        Knowledge Base
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCircleQuestion}
-                                                                                className={svg}
-                                                                        />
-                                                                        Support
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faBullhorn}
-                                                                                className={svg}
-                                                                        />
-                                                                        Annoucements
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                                <Link className={accountSettingsSideNavListItem}>
-                                                                        <FontAwesomeIcon
-                                                                                size="1x"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faBriefcase}
-                                                                                className={svg}
-                                                                        />
-                                                                        Career
-                                                                        <FontAwesomeIcon
-                                                                                size="xs"
-                                                                                color="rgb(255, 255, 255)"
-                                                                                icon={faCheck}
-                                                                                className={icon}
-                                                                        />
-                                                                </Link>
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        <SideBarMenu />
                                         <div className={mainSideNav}>
                                                 <div className={accountSettingsWrapper}>
                                                         <h4 className={accountSettingsTitle}>Account</h4>
@@ -417,7 +231,7 @@ export default function Demo() {
                                         </div>
                                 </div>
                         </div>
-                        <BottomFooter />
+                        <Footer />
                 </div>
         );
 }
