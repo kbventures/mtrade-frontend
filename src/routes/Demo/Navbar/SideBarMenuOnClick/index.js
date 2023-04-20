@@ -156,6 +156,21 @@ export default function index() {
                                                                 className={icon}
                                                         />
                                                 </Link>
+                                                <Link className={accountSettingsSideNavListItem}>
+                                                        <FontAwesomeIcon
+                                                                size="1x"
+                                                                color="rgb(255, 255, 255)"
+                                                                icon={faChartPie}
+                                                                className={svg}
+                                                        />
+                                                        Reports
+                                                        <FontAwesomeIcon
+                                                                size="xs"
+                                                                color="rgb(255, 255, 255)"
+                                                                icon={faCheck}
+                                                                className={icon}
+                                                        />
+                                                </Link>
                                         </div>
                                         <div className={accountSettingsSideNavListSub}>
                                                 <Link className={accountSettingsSideNavListItem}>

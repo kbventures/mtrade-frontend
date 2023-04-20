@@ -1,21 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-        faUser,
-        faKey,
-        faTrophy,
-        faLock,
-        faChartLine,
-        faChartPie,
-        faArrowTrendUp,
-        faEnvelope,
-        faBriefcase,
-        faBullhorn,
-        faCircleQuestion,
-        faLightbulb,
-        faCheck,
-} from '@fortawesome/free-solid-svg-icons';
 import Footer from './Footer/Bottom/index';
 import styles from './demo.module.scss';
 import NavBar from './Navbar/index';

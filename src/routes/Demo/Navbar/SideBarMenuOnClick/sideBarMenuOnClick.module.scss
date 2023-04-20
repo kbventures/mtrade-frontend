@@ -2,42 +2,21 @@
 @import '../../../../sass/base/global';
 
 
-// .settingsSideNav{
-//     display:none;
-// }
-
-
-// /* 900px */
-// @media only screen and (min-width: 56.25rem) {
-    .mainSideNav{
-        padding: 22px 15px 60px 44px;
-    }
-
-    .settingsSideNav{
-        display: block;
-        padding: 20px 0; 
-    }
-
     .accountSettingsSideNavWrapper{
-        // display: block;
         position: relative;
-        padding: 0 12px;
         width: 245px;
         font-size: $fifteen;
     }
 
     .accountSettingsSideNavList{
-        // display: block;
         margin-top: 6px;
     }
 
     .accountSettingsSideNavListSub{
-        // display: block;
         margin-top: 15px;
     }
 
     .accountSettingsSideNavListItem{
-        // display: block;
         color: $text-color;
         background-color: $on-surface-color;
         position: relative;
@@ -81,4 +60,16 @@
         display: none;
     }
 
-// }
+
+
+    /* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .settingsSidenav{
+        display: none;
+    }
+
+    .accountSettingsSideNavWrapper{
+        display: none;
+    }
+}
+
