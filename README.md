@@ -131,33 +131,6 @@ To get a local copy up and run follow these simple example steps.
    ```
 4. Change client URL
 
-   ```sh
-   cd client/src/contexts
-   Itemscontext.jsx
-
-     useEffect(() => {
-    const fetchItems = async () => {
-      const response = await fetch(`http://localhost:4001/api/products`);
-      const json = await response.json();
-      setItems(json);
-    };
-    fetchItems();
-
-    cd ..
-    cd routes/Basket
-    index.jsx
-
-    async function handleSubmit(e, basket) {
-    e.preventDefault();
-    const url = await fetch("http://localhost:4001/api/create-checkout-session", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(basket),
-    }).then((i) => i.json());
-    window.location.href = url;
-    }
-   ```
-
 5. Change Server URLS
 
    ```sh
