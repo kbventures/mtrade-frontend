@@ -77,3 +77,10 @@ Reports
 
 Notifications(Take Picture)
 Log out(Last thing)
+
+
+TODO For Testing Route
+Extract Background Black Color and implement
+Setup Popup menu for dates
+Take pictures of the popup menus you won't have timem to finish
+Start working on Large screen data items
