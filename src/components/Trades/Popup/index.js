@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import styles from './popup.module.scss'; /* import the CSS file */
+import styles from './popup.module.scss';
+import Menu from './Menu/index';
 
 const {
         overlay,
@@ -54,7 +55,8 @@ function TimeFramePopUp(props) {
                                                                 <span className={timeFrameBodyPopoverWrapper}>
                                                                         <span className={timeFrameBodyPopoverTarget}>
                                                                                 <div>
-                                                                                        <button
+                                                                                        <Menu />
+                                                                                        {/* <button
                                                                                                 type="button"
                                                                                                 className={
                                                                                                         timeFrameBodyPopoverButton
@@ -68,7 +70,7 @@ function TimeFramePopUp(props) {
                                                                                                         Last 24H
                                                                                                 </span>
                                                                                                 <FontAwesomeIcon
-                                                                                                        size="1x"
+                                                                                                        size="xs"
                                                                                                         color="rgb(255, 255, 255)"
                                                                                                         icon={
                                                                                                                 faAngleDown
@@ -77,7 +79,7 @@ function TimeFramePopUp(props) {
                                                                                                                 timeFrameBodyPopoverIcon
                                                                                                         }
                                                                                                 />
-                                                                                        </button>
+                                                                                        </button> */}
                                                                                 </div>
                                                                         </span>
                                                                 </span>

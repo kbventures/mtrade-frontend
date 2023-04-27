@@ -13,6 +13,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import styles from './trades.module.scss';
 import TimeFramePopUp from './Popup/index';
+import DesktopTrades from './DeskTopTrades/index';
 
 const {
         app,
@@ -161,6 +162,7 @@ const Trades = () => {
                                                                 </span>
                                                         </div>
                                                 </div>
+                                                <DesktopTrades />
                                                 <div className={pagination}>
                                                         <div className={paginationGroup}>
                                                                 <FontAwesomeIcon

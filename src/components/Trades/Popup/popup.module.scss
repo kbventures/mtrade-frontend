@@ -39,7 +39,6 @@
   align-items: center;
   flex: 0 0 auto;
   background-color: $surface-color;
-  // border-radius: 2px 2px 0 0; 
   padding-left: 16px;
   height: 40px;
 
@@ -58,6 +57,24 @@ margin-left:10px;
 
 .timeFrameHeaderIcon{
   align-self: center;
+}
+
+.timeFrameBody{
+  margin: 20px;
+}
+
+.timeFrameBodyPopoverButton{
+  display: flex;
+  width: 190px;
+  height: 40px;
+  padding-right: 8px;
+  background-color: $surface-color;
+  color: $text-color;
+  border: 1px solid $borderColor;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $rounded-3;
+  font-size: $fifteen;
 }
 
 
