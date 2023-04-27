@@ -12,18 +12,6 @@
 }
 
 
-// For Pop up Menu
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(16,22,26,.7);
-    z-index: 999; /* ensure the overlay is above other elements */
-  }
-
-
 .dataSet{
     margin: 0;
     border-radius: 0;
@@ -108,7 +96,7 @@ position: relative;
     border: 1px solid $borderColor;
     box-shadow: none;
     justify-content: space-between;
-    width: 162px;
+    width: 195px;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;

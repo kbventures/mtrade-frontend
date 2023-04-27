@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  } from '@fortawesome/free-brands-svg-icons';
@@ -12,11 +12,10 @@ import {
         faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 import styles from './trades.module.scss';
-import Popup from './Popup/index';
+import TimeFramePopUp from './Popup/index';
 
 const {
         app,
-        overlay,
         dataSet,
         container,
         sectionHeader,
@@ -53,9 +52,17 @@ const {
 const Trades = () => {
         const [showPopup, setShowPopup] = useState(false);
 
-        function handleButtonClick() {
+        const handleOpenMenu = useCallback(() => {
+                // eslint-disable-next-line no-console
+                console.log('handleOpenMenu Clicked!');
                 setShowPopup(true);
-        }
+        }, []);
+
+        const handleCloseMenu = useCallback(() => {
+                // eslint-disable-next-line no-console
+                console.log('handleOpenClose Clicked!');
+                setShowPopup(false);
+        }, []);
 
         return (
                 <div>
@@ -70,7 +77,7 @@ const Trades = () => {
                                                         </div>
                                                         <div
                                                                 className={sectionHeaderTimeRange}
-                                                                onClick={() => handleButtonClick(true)}
+                                                                onClick={() => handleOpenMenu()}
                                                                 aria-hidden="true"
                                                         >
                                                                 <FontAwesomeIcon
@@ -81,7 +88,12 @@ const Trades = () => {
                                                                 />
                                                                 <span>APR 10 2023 - APR 24 2023</span>
                                                                 {showPopup &&
-                                                                        ReactDOM.createPortal(<Popup />, document.body)}
+                                                                        ReactDOM.createPortal(
+                                                                                <TimeFramePopUp
+                                                                                        onClose={handleCloseMenu}
+                                                                                />,
+                                                                                document.body
+                                                                        )}
                                                         </div>
                                                         <div className={sectionHeaderRow}>
                                                                 <div className={sectionHeaderItem}>
@@ -189,10 +201,10 @@ const Trades = () => {
                                                 <div className={collapsedTable}>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -210,15 +222,15 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
@@ -227,10 +239,10 @@ const Trades = () => {
                                                         </div>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -248,15 +260,15 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
@@ -265,10 +277,10 @@ const Trades = () => {
                                                         </div>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -286,15 +298,15 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
@@ -303,10 +315,10 @@ const Trades = () => {
                                                         </div>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -324,15 +336,15 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
@@ -341,10 +353,10 @@ const Trades = () => {
                                                         </div>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -362,15 +374,15 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
@@ -379,10 +391,10 @@ const Trades = () => {
                                                         </div>
                                                         <div className={collapsedTableItem}>
                                                                 <div>
-                                                                        <div>Time (=_00:00)</div>
+                                                                        <div>Time (+00:00)</div>
                                                                         <div>
                                                                                 <div className={textFormat}>
-                                                                                        24-04-23 15:44;:17
+                                                                                        24-04-23 15:44:17
                                                                                 </div>
                                                                         </div>
                                                                 </div>
@@ -400,15 +412,129 @@ const Trades = () => {
                                                                                                         amountFraction
                                                                                                 }
                                                                                         >
-                                                                                                0000000
-                                                                                        </span>{' '}
+                                                                                                0000000000
+                                                                                        </span>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
                                                                 <div>
                                                                         <div>Amount</div>
                                                                         <div className={amountGreenText}>
-                                                                                <span>0</span>.
+                                                                                <span>-0</span>.
+                                                                                <span className={amountFraction}>
+                                                                                        01500000
+                                                                                </span>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div className={collapsedTableItem}>
+                                                                <div>
+                                                                        <div>Time (+00:00)</div>
+                                                                        <div>
+                                                                                <div className={textFormat}>
+                                                                                        24-04-23 15:44:17
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Type</div>
+                                                                        <div>BUY</div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Price</div>
+                                                                        <div>
+                                                                                <div className={amountGreenText}>
+                                                                                        <span>27269</span>.
+                                                                                        <span
+                                                                                                className={
+                                                                                                        amountFraction
+                                                                                                }
+                                                                                        >
+                                                                                                0000000000
+                                                                                        </span>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Amount</div>
+                                                                        <div className={amountGreenText}>
+                                                                                <span>-0</span>.
+                                                                                <span className={amountFraction}>
+                                                                                        01500000
+                                                                                </span>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div className={collapsedTableItem}>
+                                                                <div>
+                                                                        <div>Time (+00:00)</div>
+                                                                        <div>
+                                                                                <div className={textFormat}>
+                                                                                        24-04-23 15:44:17
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Type</div>
+                                                                        <div>BUY</div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Price</div>
+                                                                        <div>
+                                                                                <div className={amountGreenText}>
+                                                                                        <span>27269</span>.
+                                                                                        <span
+                                                                                                className={
+                                                                                                        amountFraction
+                                                                                                }
+                                                                                        >
+                                                                                                0000000000
+                                                                                        </span>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Amount</div>
+                                                                        <div className={amountGreenText}>
+                                                                                <span>-0</span>.
+                                                                                <span className={amountFraction}>
+                                                                                        01500000
+                                                                                </span>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div className={collapsedTableItem}>
+                                                                <div>
+                                                                        <div>Time (+00:00)</div>
+                                                                        <div>
+                                                                                <div className={textFormat}>
+                                                                                        24-04-23 15:44:17
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Type</div>
+                                                                        <div>BUY</div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Price</div>
+                                                                        <div>
+                                                                                <div className={amountGreenText}>
+                                                                                        <span>27269</span>.
+                                                                                        <span
+                                                                                                className={
+                                                                                                        amountFraction
+                                                                                                }
+                                                                                        >
+                                                                                                0000000000
+                                                                                        </span>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <div>Amount</div>
+                                                                        <div className={amountGreenText}>
+                                                                                <span>-0</span>.
                                                                                 <span className={amountFraction}>
                                                                                         01500000
                                                                                 </span>
