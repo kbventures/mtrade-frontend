@@ -1,0 +1,136 @@
+@import '../../../sass/base/global';
+@import '../../../sass/abstracts/global';
+
+
+.mobileNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $surface-color;
+    color: $text-color;
+    height: 50px;
+    padding: 0 24px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+  }
+  
+  .link{
+    text-decoration: none;
+    color: $text-color;
+    font-size: $fourteen;
+  }
+
+  .link:hover{
+    color:$primary-color;
+  }
+  
+
+  .greatherThan{
+    display: block;
+  }
+
+  .leftContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $surface-color;
+    color: $text-color;
+    height: 50px;
+    width: 200px;
+  }
+
+  .toggleButton{
+    background: $surface-color;
+    border: none;
+    height: 100%;
+  }
+
+  .toggleButton:hover{
+    color: $primary-color;
+  }
+
+  .sideBar{
+    display: none;
+  }
+
+  .open{
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    z-index: 1000;
+  }
+
+
+  .userButton{
+    background: none;
+    border: none;
+  }
+
+  .userButton:hover{
+    color: $primary-color;
+  }
+
+  .dropDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+  .dropDownMenu{
+    margin-top: 5px;
+    background: $surface-color;
+    position: absolute;
+    padding:5px;
+    top:35px;
+    right: 0;
+    width: 150px;
+    line-height: 20px;
+    cursor: pointer;
+    z-index: 110;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+
+.dropDownMenuItem{
+    font-weight: 300;
+    color: $text-color-menu-item;
+    list-style: none;
+    text-align: left;
+    padding: 5px 7px;
+    font-size: $fourteen;    
+}
+
+.dropDownMenuItem:hover{
+    color:$primary-color;
+    background-color: $on-surface-color-variant;
+}
+
+.divider{
+  background-color: rgba(100,107,110,0.3);
+  height: 1px;
+}
+
+
+
+  /* 900px */
+@media only screen and (min-width: 56.25rem) {
+.toggleButton{
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

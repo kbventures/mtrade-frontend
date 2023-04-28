@@ -1,0 +1,246 @@
+@import '../../sass/abstracts/variables';
+@import '../../sass/base/global';
+
+
+.app{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $text-color;
+    background: $black-background !important;
+    width: 100%;
+}
+
+
+.dataSet{
+    margin: 0;
+    border-radius: 0;
+    display: inline-block;
+    min-height: calc(100vh - 46px);
+    flex: 1 1;
+    min-width: 1px;
+    background: $black-background !important;
+
+}
+
+.container{
+    display: flex;
+    padding: 12px 15px 0;
+    flex-direction: column;
+    height: 100%;
+    background: $black-background !important;
+    max-width: 100%;
+}
+
+.sectionHeader{
+    margin-bottom: 21px;
+}
+
+.sectionHeaderTitle{
+margin-bottom: 10px;
+font-size: $thirty;
+position: relative;
+}
+
+.sectionHeaderTitleMain{
+    font-size: 23px;
+    margin-right: 12px;
+    color: $tertiary-color;
+
+}
+
+.sectionHeaderTimeRange{
+    margin: 0 2px 22px;
+    font-size: $fifteen;
+    width: fit-content;
+    color: $timeRangeColor;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+.sectionHeaderTimeRangeIcon{
+    color: inherit;
+    margin-right: 12px;
+}
+
+.sectionHeaderRow{
+    margin-bottom: -10px;
+}
+
+.sectionHeaderItem{
+    margin-right: 10px;
+}
+
+.sectionHeaderRow > * {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.sectionHeaderRow>:not(:last-child) {
+    margin-right: 10px;
+}
+
+.sectionHeaderItemLabel{
+    margin-bottom: 10px;
+}
+
+
+.sectionHeaderPopoverButton{
+    // width: 150px;
+    // min-width: 180px;
+    height: 40px;
+    padding-right: 8px;
+    background-color: $surface-color;
+    color: $text-color;
+    border: 1px solid $borderColor;
+    box-shadow: none;
+    justify-content: space-between;
+    width: 195px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:$rounded-4;
+  
+}
+
+.sectionHeaderPopoverButtonSvg{
+// display: block;
+}
+
+
+// Colomn Filte Wrapper Child of Section Header Row 
+.columnsFilterWrapper{
+    position: relative;
+}
+
+.columnsFilterWrapperButton{
+    height: 40px;
+    background-color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    color: $background-color;
+    border-radius: $rounded-4;
+    width: 162px;
+}
+
+// popoverWrapper Child of Section Header Row
+
+
+.popoverTarget{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+// Pagination Section
+
+
+.pagination{
+    margin: 25px 0;
+    
+}
+
+.paginationGroup{
+display: flex;
+align-items: center;
+width: 250px;
+justify-content: space-between;
+}
+
+
+
+.paginationIcon{
+    margin: 4px 2px; 
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.paginationPage{
+    margin: 0 10px;
+}
+
+.paginationInput{
+    width: 35px;
+    height: 22px; 
+    margin: 0 3px; 
+    text-align: center;
+    background-color: $surface-color;
+    border: 1px solid $borderColor;
+    color: $text-color;
+    line-height: 1.15;
+    display: inline-block;
+    
+}
+
+
+// Collapsed table section
+
+.collapsedTable{
+    width: 100%;
+    margin-bottom: 30px;
+    align-self: stretch;
+    // order:3;
+}
+
+.collapsedTableItem{
+    display: table;
+    min-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid $borderColor;
+    border-radius: $rounded-2;
+}
+
+
+.collapsedTableItem>div:nth-child(odd) {
+    background-color: $surface-color;
+}
+
+.collapsedTableItem>div {
+    display: table-row;
+}
+
+.collapsedTableItem>div>div:first-child{
+    width: 45%;
+    color: $tertiary-color;
+    border-right: 1px solid $borderColor;
+}
+
+.collapsedTableItem>div>div{
+    display: table-cell;
+    min-height: 24px;
+    padding: 4px 11px;
+    vertical-align: middle;
+}
+
+.collapsedTableItem>div>div:last-child{
+    padding: 4px 5px;
+    word-break: break-word;
+}
+
+.textFormat{
+    position: static;
+}
+
+
+
+
+
+/* 390px */
+@media only screen and (max-width: 24.375rem) {
+    .pagination{
+        display: flex;
+        align-self: center;
+        
+    }
+}
+
+
+
+
+/* 768px */
+@media only screen and (min-width: 48rem) {
+    .collapsedTable{
+        display:none;
+    }
+}

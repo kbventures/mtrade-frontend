@@ -1,0 +1,80 @@
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/base/global';
+
+
+
+// Collapsed table section
+
+.collapsedTable{
+    width: 100%;
+    margin-bottom: 30px;
+    align-self: stretch;
+    // order:3;
+}
+
+.collapsedTableItem{
+    display: table;
+    min-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid $borderColor;
+    border-radius: $rounded-2;
+}
+
+
+.collapsedTableItem>div:nth-child(odd) {
+    background-color: $surface-color;
+}
+
+.collapsedTableItem>div {
+    display: table-row;
+}
+
+.collapsedTableItem>div>div:first-child{
+    width: 45%;
+    color: $tertiary-color;
+    border-right: 1px solid $borderColor;
+}
+
+.collapsedTableItem>div>div{
+    display: table-cell;
+    min-height: 24px;
+    padding: 4px 11px;
+    vertical-align: middle;
+}
+
+.collapsedTableItem>div>div:last-child{
+    padding: 4px 5px;
+    word-break: break-word;
+}
+
+.textFormat{
+    position: static;
+}
+
+
+
+// New Table
+
+.tableContainer{
+    position: relative;
+    background-color: inherit;
+    color: inherit;
+    width: fit-content;
+    min-height: unset;
+    height: fit-content;
+    max-height: 517px;
+    margin-left: 1px;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+
+/* 768px */
+@media only screen and (max-width: 48rem) {
+.collapsedTable{
+    display: none;
+}
+}
+

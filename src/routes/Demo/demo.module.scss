@@ -2,6 +2,202 @@
 @import '../../sass/abstracts/variables';
 
 
+.backGroundColor{
+    background-color: red;
+}
+
+.mainContainer{
+    margin-top: 52px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: $surface-color;
+    border: 1px solid $background-color-variant;
+}
+
+.settingsSideNav{
+    display:none;
+}
+
+
+.mainSideNav{
+    padding: 20px 10px;
+    min-height: 700px; 
+    width: 100%; 
+    min-width: 0;
+    background-color: $surface-color;
+
+}
+
+.accountSettingsWrapper{
+    position: relative;
+    padding-bottom: 68px;
+    min-height: 610px;
+    letter-spacing: 0.02em;
+}
+
 .accountSettingsTitle{
     color:$text-color;
+    margin: 12px 0 30px;
+    line-height: 110%;
+    font-size: $thirty;
 }
+
+.settingsTabHeader{
+    display: flex;
+    justify-content: flex-start;
+    font-size: $eighteen;
+    margin-bottom:20px; 
+    border-bottom: 1px solid $background-color;
+    min-width: fit-content;
+}
+
+.settingsTabHeaderTitle{
+    color: $tertiary-color;
+    border-bottom: 5px solid $tertiary-color;
+}
+
+.userSettingsItemWrapper{
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid $background-color;
+    padding: 5px 0; 
+    max-width: 1000px;
+    flex-wrap: wrap;
+    height: 45px;
+}
+
+.userSettingsItemLabel{
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-weight: $font-weight-extrabold;
+    font-size: $eleven;
+    width: 200px;
+    line-height: 11px;
+}
+
+.userSettingsItemContent{
+    color:$text-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.userSettingsItemValue{
+    font-size: $thirteen;
+}
+
+.userSettingsItemRightButton{
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-weight: $font-weight-extrabold;
+    font-size: $eleven;
+    line-height: 11px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+/* 600px */
+@media only screen and (min-width:600px) {
+    .mainSideNav{
+        padding: 18px 22px;
+    }
+
+    .userSettingsItemWrapper{
+        flex-wrap: nowrap;
+    }
+}
+
+/* 900px */
+@media only screen and (min-width: 56.25rem) {
+    .mainSideNav{
+        padding: 22px 15px 60px 44px;
+    }
+
+    .settingsSideNav{
+        display: block;
+        padding: 20px 0; 
+    }
+
+    .accountSettingsSideNavWrapper{
+        // display: block;
+        position: relative;
+        padding: 0 12px;
+        width: 245px;
+        font-size: $fifteen;
+    }
+
+    .accountSettingsSideNavList{
+        // display: block;
+        margin-top: 6px;
+    }
+
+    .accountSettingsSideNavListSub{
+        // display: block;
+        margin-top: 15px;
+    }
+
+    .accountSettingsSideNavListItem{
+        // display: block;
+        color: $text-color;
+        background-color: $on-surface-color;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        line-height: 22px;
+        border-bottom: 1px solid $surface-color;
+        letter-spacing: .02em;
+        text-decoration: none;
+    }
+
+    .accountSettingsSideNavListItem:hover{
+       background-color: $on-surface-color-variant;
+    
+        .icon{
+            position: absolute;
+            display: block;
+            top:15px;
+            right:15px;
+        }
+    
+    }
+
+    .active:after{
+        background-color: $tertiary-color;
+        content: " ";
+        position: absolute;
+        height: calc(100% + 2px);
+        top: -1px;
+        right: -1px;
+        width: 4px;
+    }
+
+    .svg{
+        margin-right: 20px;
+        flex: 0 0 1rem;
+    }
+
+    .icon{
+        display: none;
+    }
+
+}
+
+
